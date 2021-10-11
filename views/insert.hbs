@@ -1,0 +1,43 @@
+<div class="container has-text-centered">
+    <h1 class="title is-1 mt-6"> Mettre en ligne un article</h1>
+    <div class="columns is-centered">
+        <div class="column is-8">
+            <form action="/insert" method="post" enctype="multipart/form-data">
+                <div class="field">
+                    <label class="label" for="">Titre de l'article</label>
+                    <div class="control">
+                        <input class="input" id="titre" type="text" name="titre" placeholder="Titre"
+                            required="required" />
+                    </div>
+                    <label class="label" for="">Phrase d'accroche</label>
+                    <div class="control">
+                        <input class="input" id="preview" type="text" name="preview" placeholder="Accroche"
+                            required="required" />
+                    </div>
+                    <label class="label" for="">Tags (séparés par des virgules)</label>
+                    <div class="control">
+                        <input class="input" id="tags" type="text" name="tags" placeholder="Tags" required="required" />
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label" for="">Image miniature</label>
+                    <div class="control"></div>
+                    <input id="thumbnail" type="file" name="thumbnail" />
+                    <label class="label" for="">Illustration</label>
+                    <div class="control"></div>
+                    <input id="illustration" type="file" name="illustration" />
+                </div>
+                <div class="field">
+                    <label class="label" for="">Contenu</label>
+                    <div class="control">
+                        <input class="input" id="contenu" type="text" name="contenu" placeholder="Contenu"
+                            style="height: 20em;" />
+                    </div>
+                </div>
+                <div class="field">
+                    <input class="button is-link" type="submit" value="Créer" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
