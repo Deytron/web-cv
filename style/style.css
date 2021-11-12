@@ -45,11 +45,6 @@ a:active {
     html {
         scroll-behavior: smooth;
         overflow-y: scroll;
-        scroll-snap-type: y mandatory;
-    }
-
-    .snap {
-        scroll-snap-align: start;
     }
 
     .specialcontent {
