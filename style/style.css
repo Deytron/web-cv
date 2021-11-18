@@ -4,12 +4,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
 
-:root {
-    --yellow: #ffbe0b;
-}
-
+/* MAIN CLASSES */
 h1 {
     font-family: "Raleway", sans-serif;
+}
+
+h2 {
+    font-family: "Open Sans", sans-serif;
 }
 
 p {
@@ -23,6 +24,7 @@ a:active {
     text-decoration: none;
     color: inherit;
 }
+/*  */
 
 /* PADDING FOR MOBILE */
 
@@ -51,6 +53,7 @@ a:active {
         text-align: right;
     }
 }
+/*  */
 
 /* BURGER LEFT */
 .navbar-brand.left-burger {
@@ -61,7 +64,6 @@ a:active {
     margin-left: 0;
     margin-right: 0;
 }
-
 /*  */
 
 /* ANIMATIONS */
@@ -85,9 +87,9 @@ a:active {
     color: white;
     mix-blend-mode: difference;
 }
-
 /*  */
 
+/* NAVBAR */
 .navbar {
     background-color: transparent;
     font-family: "Montserrat", sans-serif;
@@ -98,52 +100,29 @@ a:active {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
 }
+/*  */
 
 .parallax {
-    /* The image used */
     background-image: url("../assets/background.png");
-
-    /* Set a specific height */
     height: 100vh;
 
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.nom {
+/* PERSONAL CLASSES */
+.bigName {
     background-color: transparent;
     font-family: "Prompt", sans-serif;
     font-size: 11.5vh;
     padding-top: 65vh;
-    color: var(--yellow);
-}
-
-h2 {
-    font-family: "Open Sans", sans-serif;
-}
-
-#selectLanguageDropdown {
-    min-width: 9vw;
-    background-color: transparent;
-}
-
-p {
-    font-family: "Open Sans", sans-serif;
+    color: #ffbe0b;
 }
 
 /* CARD SHADOW */
 .has-shadow {
     /* offset-x | offset-y | blur-radius | spread-radius | color */
     box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.199);
-}
-
-.sub {
-    font-size: 1.5vh;
-}
-
-.tags {
-    font-size: 1.2vh;
 }
