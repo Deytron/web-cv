@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
 
 /* MAIN CLASSES */
 h1 {
@@ -116,9 +117,35 @@ a:active {
 .bigName {
     background-color: transparent;
     font-family: "Prompt", sans-serif;
-    font-size: 11.5vh;
-    padding-top: 65vh;
+    font-size: 8vw;
+    padding-top: 600px;
     color: #ffbe0b;
+}
+
+.bioLeftText {
+    font-size: xx-large;
+}
+
+#profilePic {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 35vh;
+    width: 35vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#arrow {
+    width: 150px;
+}
+
+.profileIcon {
+    padding-bottom: 2em;
+    margin-left: 1em;
+}
+
+.profilePicText {
+    font-family: "Comfortaa";
 }
 
 /* CARD SHADOW */

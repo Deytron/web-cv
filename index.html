@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
     <head>
         <title>Romain Ranaivoson</title>
         <meta charset="utf-8" />
@@ -24,7 +25,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
         <link rel="stylesheet" type="text/css" media="screen" href="../style/style.css" />
     </head>
-    <nav class="navbar is-fixed-top is-transparent mt-4" role="navigation" aria-label="main navigation" style="height: 5vh">
+    <nav class="navbar is-fixed-top is-transparent mt-4" aria-label="main navigation" style="height: 5vh">
         <div class="navbar-brand left-burger">
             <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="navMenu">
                 <span class="spancolor" aria-hidden="true" style="color: white"></span>
@@ -45,30 +46,38 @@
 
     <div id="start" class="rows has-text-centered parallax">
         <p class="row bigName is-size-1-touch slide-up">Romain Ranaivoson</p>
-        <a id="arrowClick"> <img id="arrow" src="assets/svg/arrow.svg" alt="arrow" width="100rem" />
+        <a id="arrowClick"> <img id="arrow" src="assets/svg/arrow.svg" alt="arrow" /> </a>
     </div>
 
     <body>
-        <div class="container">
+        <div id="container">
             <div id="gotoBio" class="mb-6">⠀</div>
             <h1 class="title is-1 has-text-centered mt-6">À propos de moi</h1>
-            <div class="columns mt-6">
-                <div class="column is-half is-flex is-flex-direction-column" style="border: 1px solid red;">
-                    <img src="assets/profil.jpg" id="profilePic" alt="">
-                <div class="subtitle is-3 is-vcentered" style="font-size: x-large">
-                    <img src="assets/svg/birthday.svg" alt="" width="25rem"> 20 ans</div>
-                <div class="subtitle is-3" style="font-size: x-large">📍 Bordeaux</div>
-                <div class="subtitle is-3" style="font-size: large">🇫🇷🇺🇸 Français - Anglais bilingue</div>
+            <div class="columns is-centered mt-6 mx-6 is-flex-wrap-wrap">
+                <div class="column is-half is-flex is-flex-direction-column">
+                    <img src="assets/profil.jpg" id="profilePic" alt="Profile picture" />
                 </div>
-                <div class="column is-half is-flex" style="border: 1px solid red;">
-                <p class=" has-text-center is-size-4 is-two-thirds mb-6" style="margin-top: 3.5vh">
-                    Actuellement en troisième année de bachelor et au poste de mentor au campus Ynov Bordeaux, je souhaite
-                    m'orienter dans le cursus en Cloud ☁, Sécurité 🛡️ et Infrastructure 🖥️.
-                </p>
+                <div class="column is-half is-flex is-flex-direction-column is-justify-content-center is-align-items-flex-end">
+                    <div class="is-flex is-flex-direction-row">
+                        <p class="profilePicText subtitle is-2">20 ans</p>
+                        <img class="profileIcon" src="assets/svg/birthday.svg" alt="Birthday cake icon" />
+                    </div>
+                    <div class="is-flex is-flex-direction-row">
+                        <p class="profilePicText subtitle is-2">Bordeaux</p>
+                        <img class="profileIcon" src="assets/svg/pin.svg" alt="Pin location icon" />
+                    </div>
+                    <div class="is-flex is-flex-direction-row">
+                        <p class="profilePicText subtitle is-2">Français - Anglais</p>
+                        <img class="profileIcon" src="assets/svg/france.svg" alt="French flag" />
+                        <img class="profileIcon" src="assets/svg/united-states.svg" alt="United states flag" />
+                    </div>
+                </div>
             </div>
-            </div>
+            <p class="has-text-center is-size-4 is-two-thirds mt-6 mb-6">
+                Actuellement en troisième année de bachelor et au poste de mentor au campus Ynov Bordeaux, je souhaite m'orienter
+                dans le cursus en Cloud ☁, Sécurité 🛡️ et Infrastructure 🖥️.
+            </p>
 
-     
             <h2 class="title is-3 has-text-centered mb-6">Mes hobbys</h2>
             <div class="columns is-centered">
                 <div class="column is-3 has-text-centered">
@@ -188,7 +197,7 @@
                 </div>
             </div>
             <div id="gotoComp" class="mb-6">⠀</div>
-            <h1 class="title is-1 has-text-centered" id="gotoComp" style="margin-top: 10vh; margin-bottom: 10vh">COMPÉTENCES</h1>
+            <h1 class="title is-1 has-text-centered" style="margin-top: 10vh; margin-bottom: 10vh">COMPÉTENCES</h1>
             <div class="columns is-centered is-vcentered">
                 <div class="column is-size-3 is-7 centercontent">
                     PROGRAMMATION
@@ -739,7 +748,7 @@
                 </div>
             </div>
             <div id="gotoExp" class="mb-6">⠀</div>
-            <h1 id="exp" class="title is-1 has-text-centered" style="margin-top: 10vh; margin-bottom: 10vh">EXPÉRIENCE</h1>
+            <h1 class="title is-1 has-text-centered" style="margin-top: 10vh; margin-bottom: 10vh">EXPÉRIENCE</h1>
             <div class="columns centercontent">
                 <div class="column is-half">
                     <svg
@@ -896,17 +905,18 @@
                     <p class="subtitle is-5">2015</p>
                     <h2 class="subtitle is-5">Stage d'observation dans l'UP Informatique de la gare de Bordeaux Saint-Jean</h2>
                 </div>
+                <div id="gotoProj" class="mb-6">⠀</div>
+                <h1 class="title is-1 has-text-centered" style="margin-top: 10vh; margin-bottom: 10vh">PROJETS</h1>
             </div>
-            <div id="gotoProj" class="mb-6">⠀</div>
-            <h1 id="projets" class="title is-1 has-text-centered" style="margin-top: 10vh; margin-bottom: 10vh">PROJETS</h1>
-        <!-- SCRIPTS-->
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        ></script>
-        <script type="text/javascript" src="../style/style.js"></script>
-        <!-- -->
+            <!-- SCRIPTS-->
+            <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+                integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+                crossorigin="anonymous"
+                referrerpolicy="no-referrer"
+            ></script>
+            <script src="../style/style.js"></script>
+            <!-- -->
+        </div>
     </body>
 </html>
