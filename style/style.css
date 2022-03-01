@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
 
 /* MAIN CLASSES */
@@ -11,11 +10,11 @@ h1 {
 }
 
 h2 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 p {
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* Debug mode */
