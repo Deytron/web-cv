@@ -1,922 +1,657 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <title>Romain Ranaivoson</title>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#fcba03" />
-        <link rel="apple-touch-icon" sizes="57x57" href="../favicons/apple-icon-57x57.png" />
-        <link rel="apple-touch-icon" sizes="60x60" href="../favicons/apple-icon-60x60.png" />
-        <link rel="apple-touch-icon" sizes="72x72" href="../favicons/apple-icon-72x72.png" />
-        <link rel="apple-touch-icon" sizes="76x76" href="../favicons/apple-icon-76x76.png" />
-        <link rel="apple-touch-icon" sizes="114x114" href="../favicons/apple-icon-114x114.png" />
-        <link rel="apple-touch-icon" sizes="120x120" href="../favicons/apple-icon-120x120.png" />
-        <link rel="apple-touch-icon" sizes="144x144" href="../favicons/apple-icon-144x144.png" />
-        <link rel="apple-touch-icon" sizes="152x152" href="../favicons/apple-icon-152x152.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-icon-180x180.png" />
-        <link rel="icon" type="image/png" sizes="192x192" href="../favicons/android-icon-192x192.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="96x96" href="../favicons/favicon-96x96.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png" />
-        <meta name="msapplication-TileColor" content="#ffffff" />
-        <meta name="msapplication-TileImage" content="ms-icon-144x144.png" />
-        <meta name="theme-color" content="#ffffff" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
-        <link rel="stylesheet" type="text/css" media="screen" href="../style/style.css" />
-    </head>
-    <nav class="navbar is-fixed-top is-transparent mt-4" aria-label="main navigation" style="height: 5vh">
-        <div class="navbar-brand left-burger">
-            <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="navMenu">
-                <span class="spancolor" aria-hidden="true" style="color: white"></span>
-                <span class="spancolor" aria-hidden="true" style="color: white"></span>
-                <span class="spancolor" aria-hidden="true" style="color: white"></span>
-            </a>
-        </div>
-        <div class="navbar-menu" id="navMenu">
-            <div class="navbar-end has-text-weight-semibold">
-                <a class="navbar-item mx-5" id="bio" href="#gotoBio"> BIO </a>
-                <a class="navbar-item mx-5" id="competences" href="#gotoComp"> COMPÉTENCES </a>
-                <a class="navbar-item mx-5" id="qualifs" href="#gotoQualif"> QUALIFICATIONS </a>
-                <a class="navbar-item mx-5" id="exp" href="#gotoExp"> EXPÉRIENCE </a>
-                <a class="navbar-item mx-5" id="projets" href="#gotoProj"> PROJETS </a>
-            </div>
-        </div>
-    </nav>
 
-    <div id="start" class="rows has-text-centered parallax">
-        <p class="row bigName is-size-1-touch slide-up">Romain Ranaivoson</p>
-        <a id="arrowClick"> <img id="arrow" src="assets/svg/arrow.svg" alt="arrow" /> </a>
+<head>
+    <title>Romain Ranaivoson</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fcba03" />
+    <link rel="apple-touch-icon" sizes="57x57" href="../favicons/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="../favicons/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../favicons/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../favicons/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../favicons/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../favicons/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../favicons/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../favicons/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="../favicons/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicons/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../style/style.css" />
+</head>
+<nav class="navbar is-fixed-top is-transparent mt-4" aria-label="main navigation" style="height: 5vh">
+    <div class="navbar-brand left-burger">
+        <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="navMenu">
+            <span class="spancolor" aria-hidden="true" style="color: white"></span>
+            <span class="spancolor" aria-hidden="true" style="color: white"></span>
+            <span class="spancolor" aria-hidden="true" style="color: white"></span>
+        </a>
     </div>
+    <div class="navbar-menu" id="navMenu">
+        <div class="navbar-end has-text-weight-semibold">
+            <a class="navbar-item mx-5" id="bio" href="#gotoBio"> BIO </a>
+            <a class="navbar-item mx-5" id="competences" href="#gotoComp"> COMPÉTENCES </a>
+            <a class="navbar-item mx-5" id="qualifs" href="#gotoQualif"> QUALIFICATIONS </a>
+            <a class="navbar-item mx-5" id="exp" href="#gotoExp"> EXPÉRIENCE </a>
+            <a class="navbar-item mx-5" id="projets" href="#gotoProj"> PROJETS </a>
+        </div>
+    </div>
+</nav>
 
-    <body>
-        <div id="container">
-            <div id="gotoBio" class="mb-6">⠀</div>
-            <h1 class="title is-1 has-text-centered mt-6">À propos de moi</h1>
-            <div class="columns is-centered mt-6 mx-6 is-flex-wrap-wrap">
-                <div class="column is-half is-flex is-flex-direction-column">
-                    <img src="assets/profil.jpg" id="profilePic" alt="Profile picture" />
-                </div>
-                <div class="column is-half is-flex is-flex-direction-column is-justify-content-center is-align-items-flex-end">
-                    <div class="is-flex is-flex-direction-row">
-                        <p class="profilePicText subtitle is-2">20 ans</p>
-                        <img class="profileIcon" src="assets/svg/birthday.svg" alt="Birthday cake icon" />
-                    </div>
-                    <div class="is-flex is-flex-direction-row">
-                        <p class="profilePicText subtitle is-2">Bordeaux</p>
-                        <img class="profileIcon" src="assets/svg/pin.svg" alt="Pin location icon" />
-                    </div>
-                    <div class="is-flex is-flex-direction-row">
-                        <p class="profilePicText subtitle is-2">Français - Anglais</p>
-                        <img class="profileIcon" src="assets/svg/france.svg" alt="French flag" />
-                        <img class="profileIcon" src="assets/svg/united-states.svg" alt="United states flag" />
-                    </div>
-                </div>
+<div id="start" class="rows has-text-centered parallax">
+    <p class="row bigName is-size-1-touch slide-up">Romain Ranaivoson</p>
+    <a id="arrowClick"> <img id="arrow" src="assets/svg/arrow.svg" alt="arrow" /> </a>
+</div>
+
+<body>
+    <div id="container">
+        <div id="gotoBio" class="mb-6">⠀</div>
+        <h1 class="title is-1 has-text-centered mt-6">À propos de moi</h1>
+
+        <div class="columns mt-6">
+            <div class="column is-4 has-text-centered">
+                <p class="profilePicText subtitle is-2">20 ans</p>
+                <img class="profileIcon" src="assets/svg/birthday.svg" alt="Birthday cake icon" />
             </div>
-            <p class="has-text-center is-size-4 is-two-thirds mt-6 mb-6">
-                Actuellement en troisième année de bachelor et au poste de mentor au campus Ynov Bordeaux, je souhaite m'orienter
-                dans le cursus en Cloud ☁, Sécurité 🛡️ et Infrastructure 🖥️.
+            <div class="column is-4 has-text-centered">
+                <p class="profilePicText subtitle is-2">Bordeaux</p>
+                <img class="profileIcon" src="assets/svg/pin.svg" alt="Pin location icon" />
+            </div>
+            <div class="column is-4 has-text-centered">
+                <p class="profilePicText subtitle is-2">Français - Anglais</p>
+                <img class="profileIcon" src="assets/svg/france.svg" alt="French flag" />
+                <img class="profileIcon" src="assets/svg/united-states.svg" alt="United states flag" />
+            </div>
+        </div>
+
+        <div class="column is-9 mx-auto has-text-centered">
+            <p class="is-size-4-touch is-size-3-desktop mt-6 mb-6">
+                Actuellement en troisième année de bachelor et au poste de mentor au campus Ynov Bordeaux, je souhaite
+                m'orienter en Cloud ☁, Sécurité 🛡️ et Infrastructure 🖥️.
             </p>
 
-            <h2 class="title is-3 has-text-centered mb-6">Mes hobbys</h2>
-            <div class="columns is-centered">
-                <div class="column is-3 has-text-centered">
-                    <h3 class="subtitle is-4">L'informatique, en particulier l'infra réseau</h3>
-                    <svg
-                        aria-hidden="true"
-                        focusable="false"
-                        data-prefix="fal"
-                        data-icon="laptop-code"
-                        role="img"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 640 512"
-                        class="svg-inline--fa fa-laptop-code fa-w-20 fa-7x mx-auto"
-                        width="100px"
-                        height="100px"
-                        fill="black"
-                    >
-                        <path
-                            d="M266.34 277.65l11.31-11.31c3.12-3.12 3.12-8.19 0-11.31L230.62 208l47.03-47.03c3.12-3.12 3.12-8.19 0-11.31l-11.31-11.31c-3.12-3.12-8.19-3.12-11.31 0l-64 64c-3.12 3.12-3.12 8.19 0 11.31l64 64c3.13 3.12 8.19 3.12 11.31-.01zm96-11.31l11.31 11.31c3.12 3.12 8.19 3.12 11.31 0l64-64c3.12-3.12 3.12-8.19 0-11.31l-64-64c-3.12-3.12-8.19-3.12-11.31 0l-11.31 11.31c-3.12 3.12-3.12 8.19 0 11.31L409.38 208l-47.03 47.03a7.994 7.994 0 0 0-.01 11.31zM624 368h-48V96c0-35.3-28.72-64-64-64H128c-35.28 0-64 28.7-64 64v272H16c-8.84 0-16 7.16-16 16v48c0 44.11 35.88 80 80 80h480c44.12 0 80-35.89 80-80v-48c0-8.84-7.16-16-16-16zM96 96c0-17.67 14.33-32 32-32h384c17.67 0 32 14.33 32 32v272H391.13c-4.06 0-7.02 3.13-7.92 7.09C379.98 389.35 367.23 400 352 400h-64c-15.23 0-27.98-10.65-31.21-24.91-.9-3.96-3.86-7.09-7.92-7.09H96V96zm512 336c0 26.47-21.53 48-48 48H80c-26.47 0-48-21.53-48-48v-32h194.75c6.59 18.62 24.38 32 45.25 32h96c20.88 0 38.66-13.38 45.25-32H608v32z"
-                            class=""
-                        ></path>
-                    </svg>
-                </div>
-                <div class="column is-3 has-text-centered">
-                    <h3 class="subtitle is-4">Les nouvelles technologies</h3>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100px" height="100px" fill="black">
-                        <path
-                            d="M 17 2 A 2 2 0 0 0 15 4 A 2 2 0 0 0 16 5.7285156 L 16 7 L 13 7 L 13 5 L 13.001953 3.5546875 A 1.0001 1.0001 0 0 0 12.503906 2.6894531 C 11.787176 2.2732724 10.988534 2.0496274 10.183594 2.0175781 C 9.91528 2.006895 9.6455955 2.0167036 9.3789062 2.0488281 C 8.31215 2.1773261 7.2814338 2.6482536 6.4648438 3.4648438 C 6.1441089 3.7855785 5.8954006 4.1406575 5.6992188 4.515625 L 5.6699219 4.5 C 5.0630052 5.5507072 4.9071497 6.7326156 5.1015625 7.8476562 C 3.2754904 8.8728198 2 10.76268 2 13 C 2 14.819816 2.8864861 16.388036 4.1660156 17.484375 C 4.6408757 20.032141 6.8174874 22 9.5 22 C 10.627523 22 11.683838 21.655029 12.556641 21.070312 A 1.0001 1.0001 0 0 0 13 20.240234 L 13 19 L 13 17 L 16 17 L 16 18.269531 A 2 2 0 0 0 15 20 A 2 2 0 0 0 17 22 A 2 2 0 0 0 19 20 A 2 2 0 0 0 18 18.271484 L 18 16 A 1.0001 1.0001 0 0 0 17 15 L 13 15 L 13 13 L 19.271484 13 A 2 2 0 0 0 21 14 A 2 2 0 0 0 23 12 A 2 2 0 0 0 21 10 A 2 2 0 0 0 19.269531 11 L 13 11 L 13 9 L 17 9 A 1.0001 1.0001 0 0 0 18 8 L 18 5.7304688 A 2 2 0 0 0 19 4 A 2 2 0 0 0 17 2 z M 9.9765625 4.0253906 C 10.323274 4.0594887 10.663125 4.1899373 11 4.3144531 L 11 5 L 11 7.8320312 A 1.0001 1.0001 0 0 0 11 8.1582031 L 11 10.001953 L 10.994141 10.001953 C 10.995487 11.115594 10.11489 11.998654 9.0019531 12 L 9.0039062 14 C 9.7330113 13.999103 10.409972 13.784291 11 13.4375 L 11 15.832031 A 1.0001 1.0001 0 0 0 11 16.158203 L 11 19 L 11 19.544922 C 10.53433 19.775688 10.05763 20 9.5 20 C 7.6963955 20 6.2496408 18.652222 6.0449219 16.904297 A 1.0001 1.0001 0 0 0 5.6445312 16.214844 C 4.6481295 15.482432 4 14.327105 4 13 C 4 11.598815 4.7246346 10.392988 5.8105469 9.6816406 C 6.2276287 10.337914 6.7833892 10.916519 7.5 11.330078 L 8.5 9.5976562 C 7.8796927 9.2396745 7.4474748 8.6957359 7.2089844 8.0820312 A 1.0001 1.0001 0 0 0 7.1855469 8 C 7.0449376 7.6024542 6.9871315 7.1827317 7.015625 6.7695312 C 7.0230903 6.6612728 7.0432757 6.5542362 7.0625 6.4472656 C 7.076659 6.3735269 7.0914327 6.2997442 7.1113281 6.2265625 C 7.1310767 6.1505802 7.1498827 6.0745236 7.1757812 6 C 7.2330841 5.8402322 7.3023195 5.6825058 7.3886719 5.5292969 C 7.5187762 5.2975857 7.6804734 5.0773393 7.8789062 4.8789062 C 8.3733162 4.3844964 8.9892096 4.1023458 9.6269531 4.0273438 C 9.7439583 4.0135832 9.860992 4.0140246 9.9765625 4.0253906 z"
-                        ></path>
-                    </svg>
-                </div>
-                <div class="column is-3 has-text-centered">
-                    <h3 class="subtitle is-4">Le basketball, que j'ai pratiqué 2 ans en club</h3>
-                    <svg
-                        aria-hidden="true"
-                        focusable="false"
-                        width="100px"
-                        height="100px"
-                        fill="black"
-                        data-prefix="fal"
-                        data-icon="basketball-ball"
-                        role="img"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 496 512"
-                        class="svg-inline--fa fa-basketball-ball fa-w-16 fa-9x"
-                    >
-                        <path
-                            d="M423.4 80.6c-96.7-96.7-254.2-96.7-350.9 0s-96.7 254.2 0 350.9c96.8 96.8 254.2 96.7 350.9 0 96.8-96.8 96.8-254.2 0-350.9zM241.2 471.7c-48-1.5-95.6-18.9-134.1-52.1l140.9-141 56.8 56.8c-33.9 38.3-56 85.7-63.6 136.3zm86.7-113.2l61 61c-33.3 28.7-73.2 45.6-114.4 50.6 7.4-41.3 25.8-79.8 53.4-111.6zm22.6-22.6c31.8-27.6 70.3-46 111.6-53.3-5.1 41.2-21.9 81.1-50.6 114.4l-61-61.1zm113.2-86.7c-50.6 7.6-98 29.7-136.3 63.5L270.6 256l140.9-140.9c33.3 38.5 50.7 86.1 52.2 134.1zm-315-69.9c-32.6 28.4-72.6 47.2-115.4 54.1 4.4-42.6 21.6-84 51.2-118.3l64.2 64.2zm-41.6-86.9c34.3-29.6 75.7-46.7 118.3-51.2-6.9 42.8-25.7 82.8-54.1 115.4l-64.2-64.2zm150.6-51.9c47 2.1 93.4 19.4 131.2 52L248 233.4l-54.1-54.1c34.5-38.9 56.7-87.2 63.8-138.8zM32.5 265.7c51.6-7.2 99.9-29.4 138.8-63.8l54.1 54.1-141 140.9c-32.5-37.8-49.8-84.1-51.9-131.2z"
-                            class=""
-                        ></path>
-                    </svg>
-                </div>
-                <div class="column is-3 has-text-centered">
-                    <h3 class="subtitle is-4">Le Football</h3>
-                    <svg
-                        width="100px"
-                        height="100px"
-                        fill="black"
-                        aria-hidden="true"
-                        focusable="false"
-                        data-prefix="fas"
-                        data-icon="futbol"
-                        role="img"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 512 512"
-                        class="svg-inline--fa fa-futbol fa-w-16 fa-3x"
-                    >
-                        <path
-                            d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zm-48 0l-.003-.282-26.064 22.741-62.679-58.5 16.454-84.355 34.303 3.072c-24.889-34.216-60.004-60.089-100.709-73.141l13.651 31.939L256 139l-74.953-41.525 13.651-31.939c-40.631 13.028-75.78 38.87-100.709 73.141l34.565-3.073 16.192 84.355-62.678 58.5-26.064-22.741-.003.282c0 43.015 13.497 83.952 38.472 117.991l7.704-33.897 85.138 10.447 36.301 77.826-29.902 17.786c40.202 13.122 84.29 13.148 124.572 0l-29.902-17.786 36.301-77.826 85.138-10.447 7.704 33.897C442.503 339.952 456 299.015 456 256zm-248.102 69.571l-29.894-91.312L256 177.732l77.996 56.527-29.622 91.312h-96.476z"
-                            class=""
-                        ></path>
-                    </svg>
-                </div>
-            </div>
-            <div class="columns is-centered">
-                <div class="column is-3 has-text-centered">
-                    <h3 class="subtitle is-4">Les jeux vidéo</h3>
-                    <svg
-                        width="100px"
-                        height="100px"
-                        fill="black"
-                        aria-hidden="true"
-                        focusable="false"
-                        data-prefix="fal"
-                        data-icon="alien-monster"
-                        role="img"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 576 512"
-                        class="svg-inline--fa fa-alien-monster fa-w-18 fa-3x"
-                    >
-                        <path
-                            d="M192,320h32V224H192Zm160,0h32V224H352ZM544,112H512a32.03165,32.03165,0,0,0-32,32v16H416V128h32a32.03165,32.03165,0,0,0,32-32V64a32.03165,32.03165,0,0,0-32-32H416a32.03165,32.03165,0,0,0-32,32H352a32.03165,32.03165,0,0,0-32,32v32H256V96a32.03165,32.03165,0,0,0-32-32H192a32.03165,32.03165,0,0,0-32-32H128A32.03165,32.03165,0,0,0,96,64V96a32.03165,32.03165,0,0,0,32,32h32v32H96V144a32.03165,32.03165,0,0,0-32-32H32A32.03165,32.03165,0,0,0,0,144V288a32.03165,32.03165,0,0,0,32,32H64v32a32.03165,32.03165,0,0,0,32,32h32v64a32.03165,32.03165,0,0,0,32,32h80a32.03165,32.03165,0,0,0,32-32V416a32.03165,32.03165,0,0,0-32-32h96a32.03165,32.03165,0,0,0-32,32v32a32.03165,32.03165,0,0,0,32,32h80a32.03165,32.03165,0,0,0,32-32V384h32a32.03165,32.03165,0,0,0,32-32V320h32a32.03165,32.03165,0,0,0,32-32V144A32.03165,32.03165,0,0,0,544,112ZM416,64h32V96H416ZM128,96V64h32V96ZM240,448H160V384h32v32h48Zm176,0H336V416h48V384h32ZM544,288H480v64H96V288H32V144H64V256H96V192h96V96h32v64H352V96h32v96h96v64h32V144h32Z"
-                            class=""
-                        ></path>
-                    </svg>
-                </div>
-                <div class="column is-3 has-text-centered">
-                    <h3 class="subtitle is-4">Le montage vidéo</h3>
-                    <svg
-                        width="100px"
-                        height="100px"
-                        fill="black"
-                        aria-hidden="true"
-                        focusable="false"
-                        data-prefix="fal"
-                        data-icon="file-video"
-                        role="img"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 384 512"
-                        class="svg-inline--fa fa-file-video fa-w-12 fa-3x"
-                    >
-                        <path
-                            d="M224 280.593C224 267.01 212.989 256 199.407 256H88.593C75.011 256 64 267.01 64 280.593v110.815C64 404.99 75.011 416 88.593 416h110.814C212.989 416 224 404.99 224 391.407V381l27.971 27.971a23.998 23.998 0 0 0 16.97 7.029H296c13.255 0 24-10.745 24-24V280c0-13.255-10.745-24-24-24h-27.059a24.003 24.003 0 0 0-16.97 7.029L224 291v-10.407zM192 384H96v-96h96v96zm80.255-96H288v96h-15.745L224 342.826v-13.652L272.255 288zm97.686-190.059l-83.883-83.882A47.996 47.996 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v416c0 26.51 21.49 48 48 48h288c26.51 0 48-21.49 48-48V131.882a48 48 0 0 0-14.059-33.941zM256 32.491a15.888 15.888 0 0 1 7.432 4.195l83.882 83.882a15.882 15.882 0 0 1 4.195 7.431H256V32.491zM352 464c0 8.837-7.164 16-16 16H48c-8.836 0-16-7.163-16-16V48c0-8.837 7.164-16 16-16h176v104c0 13.255 10.745 24 24 24h104v304z"
-                            class=""
-                        ></path>
-                    </svg>
-                </div>
-            </div>
-            <div id="gotoComp" class="mb-6">⠀</div>
-            <h1 class="title is-1 has-text-centered" style="margin-top: 10vh; margin-bottom: 10vh">COMPÉTENCES</h1>
-            <div class="columns is-centered is-vcentered">
-                <div class="column is-size-3 is-7 centercontent">
-                    PROGRAMMATION
-                    <ul>
-                        <li class="is-size-6 mt-4">Langages : HTML/CSS, JavaScript, PHP, Python, Go, C#, Bash, Powershell</li>
-                        <li class="is-size-6">Frameworks : Bootstrap, Bulma, ExpressJS, Symfony, ASP .NET</li>
-                    </ul>
-                </div>
-                <div class="column has-text-center">
-                    <!-- HTML-->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="80" height="80">
-                        <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
-                        <path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
-                        <path
-                            fill="#FFF"
-                            d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"
-                        ></path>
-                        <path
-                            fill="#EEE"
-                            d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"
-                        ></path>
-                    </svg>
-                    <!-- FIN HTML-->
-                    <!-- CSS-->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="80" height="80">
-                        <path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
-                        <path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
-                        <path
-                            fill="#FFF"
-                            d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z"
-                        ></path>
-                        <path
-                            fill="#EEE"
-                            d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z"
-                        ></path>
-                    </svg>
-                    <!-- FIN CSS-->
-                    <!-- JS-->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="80" height="80">
-                        <path fill="#ffd600" d="M6,42V6h36v36H6z"></path>
-                        <path
-                            fill="#000001"
-                            d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z"
-                        ></path>
-                    </svg>
-                    <!-- FIN JS-->
-                    <!-- PHP-->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewbox="0 0 48 48">
-                        <path
-                            fill="#00BCD4"
-                            d="M42,37c0,2.762-2.238,5-5,5H11c-2.762,0-5-2.238-5-5V11c0-2.762,2.238-5,5-5h26c2.762,0,5,2.238,5,5V37z"
-                        ></path>
-                        <path
-                            fill="#FFF"
-                            d="M14 25.483V29h-1.993V19h3.76c.984 0 1.77.307 2.355.92C18.707 20.533 19 21.33 19 22.311s-.289 1.753-.868 2.321-1.381.852-2.406.852H14zM14.017 23.801h1.75c.383 0 .679-.125.889-.378.21-.252.314-.618.314-1.099 0-.499-.107-.896-.321-1.192-.214-.294-.501-.444-.861-.449h-1.771V23.801zM31 25.483V29h-1.993V19h3.76c.984 0 1.77.307 2.355.92C35.707 20.533 36 21.33 36 22.311s-.289 1.753-.868 2.321-1.381.852-2.406.852H31zM31.017 23.801h1.75c.383 0 .679-.125.889-.378.21-.252.314-.618.314-1.099 0-.499-.107-.896-.321-1.192-.214-.294-.501-.444-.861-.449h-1.771V23.801zM27 29h-2v-4.279h-3.02V29H20V19h1.98v4H25v-4h2V29z"
-                        ></path>
-                    </svg>
-                    <!-- FIN PHP-->
-                    <!-- PYTHON-->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewbox="0 0 48 48">
-                        <path
-                            fill="#0277BD"
-                            d="M24.047,5c-1.555,0.005-2.633,0.142-3.936,0.367c-3.848,0.67-4.549,2.077-4.549,4.67V14h9v2H15.22h-4.35c-2.636,0-4.943,1.242-5.674,4.219c-0.826,3.417-0.863,5.557,0,9.125C5.851,32.005,7.294,34,9.931,34h3.632v-5.104c0-2.966,2.686-5.896,5.764-5.896h7.236c2.523,0,5-1.862,5-4.377v-8.586c0-2.439-1.759-4.263-4.218-4.672C27.406,5.359,25.589,4.994,24.047,5z M19.063,9c0.821,0,1.5,0.677,1.5,1.502c0,0.833-0.679,1.498-1.5,1.498c-0.837,0-1.5-0.664-1.5-1.498C17.563,9.68,18.226,9,19.063,9z"
-                        ></path>
-                        <path
-                            fill="#FFC107"
-                            d="M23.078,43c1.555-0.005,2.633-0.142,3.936-0.367c3.848-0.67,4.549-2.077,4.549-4.67V34h-9v-2h9.343h4.35c2.636,0,4.943-1.242,5.674-4.219c0.826-3.417,0.863-5.557,0-9.125C41.274,15.995,39.831,14,37.194,14h-3.632v5.104c0,2.966-2.686,5.896-5.764,5.896h-7.236c-2.523,0-5,1.862-5,4.377v8.586c0,2.439,1.759,4.263,4.218,4.672C19.719,42.641,21.536,43.006,23.078,43z M28.063,39c-0.821,0-1.5-0.677-1.5-1.502c0-0.833,0.679-1.498,1.5-1.498c0.837,0,1.5,0.664,1.5,1.498C29.563,38.32,28.899,39,28.063,39z"
-                        ></path>
-                    </svg>
-                    <!-- FIN PYTHON-->
-                    <!-- GO-->
-                    <svg
-                        id="Layer_1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        version="1.1"
-                        width="80"
-                        height="80"
-                        x="0px"
-                        y="0px"
-                        viewbox="0 0 205.4 76.7"
-                        style="enable-background: new 0 0 205.4 76.7"
-                        xml:space="preserve"
-                    >
-                        <style type="text/css">
-                            .st0 {
-                                fill: #00acd7;
-                            }
-                        </style>
-                        <g>
-                            <g>
-                                <g>
-                                    <g>
-                                        <path
-                                            class="st0"
-                                            d="M15.5,23.2c-0.4,0-0.5-0.2-0.3-0.5l2.1-2.7c0.2-0.3,0.7-0.5,1.1-0.5h35.7c0.4,0,0.5,0.3,0.3,0.6l-1.7,2.6      c-0.2,0.3-0.7,0.6-1,0.6L15.5,23.2z"
-                                        ></path>
-                                    </g>
-                                </g>
-                            </g>
-                            <g>
-                                <g>
-                                    <g>
-                                        <path
-                                            class="st0"
-                                            d="M0.4,32.4c-0.4,0-0.5-0.2-0.3-0.5l2.1-2.7c0.2-0.3,0.7-0.5,1.1-0.5h45.6c0.4,0,0.6,0.3,0.5,0.6l-0.8,2.4      c-0.1,0.4-0.5,0.6-0.9,0.6L0.4,32.4z"
-                                        ></path>
-                                    </g>
-                                </g>
-                            </g>
-                            <g>
-                                <g>
-                                    <g>
-                                        <path
-                                            class="st0"
-                                            d="M24.6,41.6c-0.4,0-0.5-0.3-0.3-0.6l1.4-2.5c0.2-0.3,0.6-0.6,1-0.6h20c0.4,0,0.6,0.3,0.6,0.7L47.1,41      c0,0.4-0.4,0.7-0.7,0.7L24.6,41.6z"
-                                        ></path>
-                                    </g>
-                                </g>
-                            </g>
-                            <g>
-                                <g id="CXHf1q_3_">
-                                    <g>
-                                        <g>
-                                            <path
-                                                class="st0"
-                                                d="M128.4,21.4c-6.3,1.6-10.6,2.8-16.8,4.4c-1.5,0.4-1.6,0.5-2.9-1c-1.5-1.7-2.6-2.8-4.7-3.8       c-6.3-3.1-12.4-2.2-18.1,1.5c-6.8,4.4-10.3,10.9-10.2,19c0.1,8,5.6,14.6,13.5,15.7c6.8,0.9,12.5-1.5,17-6.6       c0.9-1.1,1.7-2.3,2.7-3.7c-3.6,0-8.1,0-19.3,0c-2.1,0-2.6-1.3-1.9-3c1.3-3.1,3.7-8.3,5.1-10.9c0.3-0.6,1-1.6,2.5-1.6       c5.1,0,23.9,0,36.4,0c-0.2,2.7-0.2,5.4-0.6,8.1c-1.1,7.2-3.8,13.8-8.2,19.6c-7.2,9.5-16.6,15.4-28.5,17       c-9.8,1.3-18.9-0.6-26.9-6.6c-7.4-5.6-11.6-13-12.7-22.2c-1.3-10.9,1.9-20.7,8.5-29.3c7.1-9.3,16.5-15.2,28-17.3       c9.4-1.7,18.4-0.6,26.5,4.9c5.3,3.5,9.1,8.3,11.6,14.1C130,20.6,129.6,21.1,128.4,21.4z"
-                                            ></path>
-                                        </g>
-                                        <g>
-                                            <path
-                                                class="st0"
-                                                d="M161.5,76.7c-9.1-0.2-17.4-2.8-24.4-8.8c-5.9-5.1-9.6-11.6-10.8-19.3c-1.8-11.3,1.3-21.3,8.1-30.2       c7.3-9.6,16.1-14.6,28-16.7c10.2-1.8,19.8-0.8,28.5,5.1c7.9,5.4,12.8,12.7,14.1,22.3c1.7,13.5-2.2,24.5-11.5,33.9       c-6.6,6.7-14.7,10.9-24,12.8C166.8,76.3,164.1,76.4,161.5,76.7z M185.3,36.3c-0.1-1.3-0.1-2.3-0.3-3.3       c-1.8-9.9-10.9-15.5-20.4-13.3c-9.3,2.1-15.3,8-17.5,17.4c-1.8,7.8,2,15.7,9.2,18.9c5.5,2.4,11,2.1,16.3-0.6       C180.5,51.3,184.8,44.9,185.3,36.3z"
-                                            ></path>
-                                        </g>
-                                    </g>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                    <!-- FIN GOLANG-->
-                    <!-- CSHARP-->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="80" height="80">
-                        <path
-                            fill="#37474f"
-                            fill-rule="evenodd"
-                            d="M22.903,3.286c0.679-0.381,1.515-0.381,2.193,0 c3.355,1.883,13.451,7.551,16.807,9.434C42.582,13.1,43,13.804,43,14.566c0,3.766,0,15.101,0,18.867 c0,0.762-0.418,1.466-1.097,1.847c-3.355,1.883-13.451,7.551-16.807,9.434c-0.679,0.381-1.515,0.381-2.193,0 c-3.355-1.883-13.451-7.551-16.807-9.434C5.418,34.899,5,34.196,5,33.434c0-3.766,0-15.101,0-18.867 c0-0.762,0.418-1.466,1.097-1.847C9.451,10.837,19.549,5.169,22.903,3.286z"
-                            clip-rule="evenodd"
-                        ></path>
-                        <path
-                            fill="#546e7a"
-                            fill-rule="evenodd"
-                            d="M5.304,34.404C5.038,34.048,5,33.71,5,33.255 c0-3.744,0-15.014,0-18.759c0-0.758,0.417-1.458,1.094-1.836c3.343-1.872,13.405-7.507,16.748-9.38 c0.677-0.379,1.594-0.371,2.271,0.008c3.343,1.872,13.371,7.459,16.714,9.331c0.27,0.152,0.476,0.335,0.66,0.576L5.304,34.404z"
-                            clip-rule="evenodd"
-                        ></path>
-                        <path
-                            fill="#fff"
-                            fill-rule="evenodd"
-                            d="M24,10c7.727,0,14,6.273,14,14s-6.273,14-14,14 s-14-6.273-14-14S16.273,10,24,10z M24,17c3.863,0,7,3.136,7,7c0,3.863-3.137,7-7,7s-7-3.137-7-7C17,20.136,20.136,17,24,17z"
-                            clip-rule="evenodd"
-                        ></path>
-                        <path
-                            fill="#455a64"
-                            fill-rule="evenodd"
-                            d="M42.485,13.205c0.516,0.483,0.506,1.211,0.506,1.784 c0,3.795-0.032,14.589,0.009,18.384c0.004,0.396-0.127,0.813-0.323,1.127L23.593,24L42.485,13.205z"
-                            clip-rule="evenodd"
-                        ></path>
-                        <path fill="#fff" fill-rule="evenodd" d="M34 20H35V28H34zM37 20H38V28H37z" clip-rule="evenodd"></path>
-                        <path fill="#fff" fill-rule="evenodd" d="M32 25H40V26H32zM32 22H40V23H32z" clip-rule="evenodd"></path>
-                    </svg>
-                    <!-- FIN CSHARP-->
-                    <!-- BASH-->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="80" height="80">
-                        <rect width="14" height="7" x="17" y="8" fill="#999"></rect>
-                        <path fill="#666" d="M43,8H31v7h14v-5C45,8.895,44.105,8,43,8z"></path>
-                        <path fill="#ccc" d="M5,8c-1.105,0-2,0.895-2,2v5h14V8H5z"></path>
-                        <lineargradient
-                            id="u8UbA7GmcDgkSbOtELVhra"
-                            x1="3.594"
-                            x2="44.679"
-                            y1="13.129"
-                            y2="39.145"
-                            gradientunits="userSpaceOnUse"
-                        >
-                            <stop offset="0" stop-color="#4c4c4c"></stop>
-                            <stop offset="1" stop-color="#343434"></stop>
-                        </lineargradient>
-                        <path fill="#000000" d="M45,13H3v25c0,1.105,0.895,2,2,2h38c1.105,0,2-0.895,2-2V13z"></path>
-                        <path
-                            d="M10.597,18.314l-2.319,2.319c-0.514,0.514-0.514,1.347,0,1.861l3.978,3.978l-4.033,4.033	c-0.514,0.514-0.514,1.347,0,1.861l2.319,2.319c0.514,0.514,1.347,0.514,1.861,0l7.282-7.283c0.514-0.514,0.514-1.347,0-1.861	l-7.228-7.228C11.944,17.8,11.111,17.8,10.597,18.314z"
-                            opacity=".05"
-                        ></path>
-                        <path
-                            d="M10.889,18.729l-2.197,2.197c-0.352,0.352-0.352,0.924,0,1.276l4.271,4.271l-4.325,4.325	c-0.352,0.352-0.352,0.924,0,1.276l2.197,2.197c0.353,0.352,0.924,0.352,1.276,0l7.16-7.161c0.352-0.352,0.352-0.924,0-1.276	l-7.106-7.106C11.813,18.376,11.242,18.376,10.889,18.729z"
-                            opacity=".07"
-                        ></path>
-                        <lineargradient
-                            id="u8UbA7GmcDgkSbOtELVhrb"
-                            x1="10.135"
-                            x2="15.002"
-                            y1="32.774"
-                            y2="27.907"
-                            gradientunits="userSpaceOnUse"
-                        >
-                            <stop offset="0" stop-color="#a0a0a0"></stop>
-                            <stop offset=".569" stop-color="#9e9e9e"></stop>
-                            <stop offset=".774" stop-color="#979797"></stop>
-                            <stop offset=".92" stop-color="#8c8c8c"></stop>
-                            <stop offset="1" stop-color="#818181"></stop>
-                        </lineargradient>
-                        <path
-                            fill="url(#u8UbA7GmcDgkSbOtELVhrb)"
-                            d="M9.053,31.09l6.983-6.983c0.191-0.191,0.501-0.191,0.692,0l2.075,2.075	c0.191,0.191,0.191,0.501,0,0.692l-6.983,6.983c-0.191,0.191-0.501,0.191-0.692,0l-2.075-2.075	C8.862,31.591,8.862,31.281,9.053,31.09z"
-                        ></path>
-                        <path
-                            fill="#d0d0d0"
-                            d="M11.873,19.143l6.983,6.983c0.191,0.191,0.191,0.501,0,0.692l-2.075,2.075	c-0.191,0.191-0.501,0.191-0.692,0L9.107,21.91c-0.191-0.191-0.191-0.501,0-0.692l2.075-2.075	C11.373,18.952,11.682,18.952,11.873,19.143z"
-                        ></path>
-                        <path
-                            d="M22,32v4c0,0.552,0.448,1,1,1h17c0.552,0,1-0.448,1-1v-4c0-0.552-0.448-1-1-1H23	C22.448,31,22,31.448,22,32z"
-                            opacity=".05"
-                        ></path>
-                        <path
-                            d="M39.909,36.5H23.091c-0.326,0-0.591-0.265-0.591-0.591v-3.818c0-0.326,0.265-0.591,0.591-0.591	h16.818c0.326,0,0.591,0.265,0.591,0.591v3.818C40.5,36.235,40.235,36.5,39.909,36.5z"
-                            opacity=".07"
-                        ></path>
-                        <path
-                            fill="#d4d4d4"
-                            d="M23.5,32h16c0.276,0,0.5,0.224,0.5,0.5v3c0,0.276-0.224,0.5-0.5,0.5h-16c-0.276,0-0.5-0.224-0.5-0.5	v-3C23,32.224,23.224,32,23.5,32z"
-                        ></path>
-                    </svg>
-                    <!-- FIN BASH-->
-                </div>
-            </div>
-            <div class="columns is-centered is-vcentered" style="margin-top: 10vh">
-                <div class="column is-size-3 is-7 centercontent">
-                    RÉSEAU
-                    <ul>
-                        <li class="is-size-6 mt-4">Virtualisation d'équipements réseau, OS serveur, Hyperviseur Type 1,</li>
-                        <li class="is-size-6">Stockage, Réplication, Pare-feux</li>
-                    </ul>
-                </div>
-                <div class="column has-text-center">
-                    <!-- WINDOWS SERVER-->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="80" height="80">
-                        <lineargradient
-                            id="RucpB_ahqt8VfTW7X2sDFa"
-                            x1="9.703"
-                            x2="16.585"
-                            y1="26.119"
-                            y2="37.59"
-                            gradientunits="userSpaceOnUse"
-                        >
-                            <stop offset="0" stop-color="#1784d8"></stop>
-                            <stop offset="1" stop-color="#0864c5"></stop>
-                        </lineargradient>
-                        <path
-                            fill="url(#RucpB_ahqt8VfTW7X2sDFa)"
-                            d="M20,25.026L5.011,25l0.001,11.002c0,0.999,0.737,1.844,1.726,1.981L20,39.818V25.026z"
-                        ></path>
-                        <lineargradient
-                            id="RucpB_ahqt8VfTW7X2sDFb"
-                            x1="24.604"
-                            x2="44.545"
-                            y1="27.13"
-                            y2="40.895"
-                            gradientunits="userSpaceOnUse"
-                        >
-                            <stop offset="0" stop-color="#31abec"></stop>
-                            <stop offset="1" stop-color="#1582d5"></stop>
-                        </lineargradient>
-                        <path
-                            fill="url(#RucpB_ahqt8VfTW7X2sDFb)"
-                            d="M22,25.03v15.065l18.722,2.59c1.202,0.166,2.274-0.767,2.274-1.981L43,25.066L22,25.03z"
-                        ></path>
-                        <lineargradient
-                            id="RucpB_ahqt8VfTW7X2sDFc"
-                            x1="8.142"
-                            x2="25.788"
-                            y1="11.699"
-                            y2="27.581"
-                            gradientunits="userSpaceOnUse"
-                        >
-                            <stop offset="0" stop-color="#31abec"></stop>
-                            <stop offset="1" stop-color="#1582d5"></stop>
-                        </lineargradient>
-                        <path
-                            fill="url(#RucpB_ahqt8VfTW7X2sDFc)"
-                            d="M20,8.256l-13.278,1.88c-0.987,0.14-1.721,0.985-1.72,1.982L5.014,23H20V8.256z"
-                        ></path>
-                        <lineargradient
-                            id="RucpB_ahqt8VfTW7X2sDFd"
-                            x1="25.913"
-                            x2="56.031"
-                            y1="10.147"
-                            y2="30.618"
-                            gradientunits="userSpaceOnUse"
-                        >
-                            <stop offset="0" stop-color="#54daff"></stop>
-                            <stop offset="1" stop-color="#25a2e5"></stop>
-                        </lineargradient>
-                        <path
-                            fill="url(#RucpB_ahqt8VfTW7X2sDFd)"
-                            d="M22,7.973V23h20.995V7.303c0-1.216-1.076-2.151-2.28-1.98L22,7.973z"
-                        ></path>
-                    </svg>
-                    <!-- FIN WINDOWS SERVER-->
-                    <!-- CISCO-->
-                    <svg
-                        id="svg24"
-                        xmlns:svg="http://www.w3.org/2000/svg"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        version="1.1"
-                        width="100"
-                        height="75"
-                        fill="#049fd9"
-                        viewbox="0 0 200 230"
-                    >
-                        <path
-                            id="path10"
-                            d="m 106.48,76.238 c -0.282,-0.077 -4.621,-1.196 -9.232,-1.196 -8.73,0 -13.986,4.714 -13.986,11.734 0,6.214 4.397,9.313 9.674,10.98 0.585,0.193 1.447,0.463 2.021,0.653 2.349,0.739 4.224,1.837 4.224,3.739 0,2.127 -2.167,3.504 -6.878,3.504 -4.14,0 -8.109,-1.184 -8.945,-1.395 v 8.637 c 0.466,0.099 5.183,1.025 10.222,1.025 7.248,0 15.539,-3.167 15.539,-12.595 0,-4.573 -2.8,-8.783 -8.947,-10.737 L 97.559,89.755 C 96,89.263 93.217,88.466 93.217,86.181 c 0,-1.805 2.062,-3.076 5.859,-3.076 3.276,0 7.263,1.101 7.404,1.145 z m 80.041,18.243 c 0,5.461 -4.183,9.879 -9.796,9.879 -5.619,0 -9.791,-4.418 -9.791,-9.879 0,-5.45 4.172,-9.87 9.791,-9.87 5.613,0 9.796,4.42 9.796,9.87 m -9.796,-19.427 c -11.544,0 -19.823,8.707 -19.823,19.427 0,10.737 8.279,19.438 19.823,19.438 11.543,0 19.834,-8.701 19.834,-19.438 0,-10.72 -8.291,-19.427 -19.834,-19.427 M 70.561,113.251 H 61.089 V 75.719 h 9.472"
-                        ></path>
-                        <path
-                            id="path12"
-                            d="m 48.07,76.399 c -0.89,-0.264 -4.18,-1.345 -8.636,-1.345 -11.526,0 -19.987,8.218 -19.987,19.427 0,12.093 9.34,19.438 19.987,19.438 4.23,0 7.459,-1.002 8.636,-1.336 v -10.075 c -0.407,0.226 -3.503,1.992 -7.957,1.992 -6.31,0 -10.38,-4.441 -10.38,-10.019 0,-5.748 4.246,-10.011 10.38,-10.011 4.53,0 7.576,1.805 7.957,2.004"
-                        ></path>
-                        <use id="use14" xlink:href="#path12" transform="translate(98.86)"></use>
-                        <g id="g22">
-                            <path
-                                id="path16"
-                                d="m 61.061,4.759 c 0,-2.587 -2.113,-4.685 -4.703,-4.685 -2.589,0 -4.702,2.098 -4.702,4.685 v 49.84 c 0,2.602 2.113,4.699 4.702,4.699 2.59,0 4.703,-2.097 4.703,-4.699 z M 35.232,22.451 c 0,-2.586 -2.112,-4.687 -4.702,-4.687 -2.59,0 -4.702,2.101 -4.702,4.687 v 22.785 c 0,2.601 2.112,4.699 4.702,4.699 2.59,0 4.702,-2.098 4.702,-4.699 z M 9.404,35.383 C 9.404,32.796 7.292,30.699 4.702,30.699 2.115,30.699 0,32.796 0,35.383 v 9.853 c 0,2.601 2.115,4.699 4.702,4.699 2.59,0 4.702,-2.098 4.702,-4.699"
-                            ></path>
-                            <use id="use18" xlink:href="#path16" transform="matrix(-1,0,0,1,112.717,0)"></use>
-                        </g>
-                        <use id="use20" xlink:href="#g22" transform="matrix(-1,0,0,1,216,0)"></use>
-                    </svg>
-                    <!-- FIN CISCO-->
-                    <!-- ESXI-->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="80" height="80">
-                        <path
-                            fill="#9e9e9e"
-                            d="M41.415,14c-3.592,0-5.842,2.5-5.842,2.5c-1.196-1.559-2.844-2.496-5.633-2.496c-2.944,0-4.896,2.496-4.896,2.496C23.847,14.94,21.687,14,20,14c-2.609,0-4.681,1.154-5.945,4.06L9.82,27.322L5.03,15.558c-0.603-1.33-2.095-1.933-3.487-1.311c-1.394,0.623-1.907,2.178-1.278,3.509l5.847,13.19C7.033,32.95,8.002,34,9.821,34c1.943,0,2.79-1.143,3.709-3.053c0,0,3.982-8.883,4.47-9.947s1.299-2,2.5-2c1.375,0,2.5,1.125,2.5,2.5v9.876C23,32.819,24.087,34,25.522,34C26.957,34,28,32.819,28,31.376V21.5c0-1.375,1.125-2.5,2.5-2.5s2.5,1.125,2.5,2.5v10c0,1.375,1.125,2.5,2.5,2.5s2.5-1.125,2.5-2.5v-10c0-1.375,1.125-2.5,2.5-2.5s2.5,1.125,2.5,2.5v10c0,1.375,1.125,2.5,2.5,2.5s2.5-1.125,2.5-2.5v-0.564V21.5v-1.143C48,16.619,45.011,14,41.415,14z"
-                        ></path>
-                    </svg>
-                    <!-- FIN ESXI-->
-                    <!-- FORTINET-->
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:cc="http://creativecommons.org/ns#"
-                        xmlns:dc="http://purl.org/dc/elements/1.1/"
-                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                        width="80"
-                        height="80"
-                        version="1.1"
-                        viewbox="17 -6 30 30"
-                    >
-                        <path
-                            d="m43.28 17.77c1.38-0.4688 2.454-2.058 2.712-4.056v-0.5775h-7.075v4.634h4.362zm2.713-13.13v-0.5225c-0.2712-2.085-1.425-3.728-2.896-4.114h-4.179v4.636h7.075zm-24.9 8.497v0.5725c0.2562 2 1.33 3.592 2.714 4.061h4.34v-4.634h-7.054zm2.895-13.13c-1.469 0.3862-2.626 2.03-2.895 4.118v0.5188h7.054v-4.636h-4.159zm22.01 6.566h-7.075v4.636h7.075v-4.636zm-15.92 11.2h6.921v-4.634h-6.921v4.634zm6.921-17.77h-6.921v4.636h6.921v-4.636zm-15.9 11.2h7.054v-4.636h-7.054v4.636z"
-                            style="fill: #ee2e24"
-                        ></path>
-                    </svg>
-                    <!-- FIN FORTINET-->
-                </div>
-            </div>
-            <div class="columns is-centered is-vcentered" style="margin-top: 10vh">
-                <div class="column is-size-3 is-7 centercontent">
-                    BUREAUTIQUE
-                    <ul>
-                        <li class="is-size-6 mt-4">Suite Office</li>
-                        <li class="is-size-6">Adobe Photoshop, Premiere Pro</li>
-                    </ul>
-                </div>
-                <div class="column">
-                    <!-- WORD-->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="80" height="80">
-                        <path
-                            fill="#2d92d4"
-                            d="M42.256,6H15.744C14.781,6,14,6.781,14,7.744v7.259h30V7.744C44,6.781,43.219,6,42.256,6z"
-                        ></path>
-                        <path
-                            fill="#2150a9"
-                            d="M14,33.054v7.202C14,41.219,14.781,42,15.743,42h26.513C43.219,42,44,41.219,44,40.256v-7.202H14z"
-                        ></path>
-                        <path fill="#2d83d4" d="M14 15.003H44V24.005000000000003H14z"></path>
-                        <path fill="#2e70c9" d="M14 24.005H44V33.055H14z"></path>
-                        <path
-                            fill="#00488d"
-                            d="M22.319,34H5.681C4.753,34,4,33.247,4,32.319V15.681C4,14.753,4.753,14,5.681,14h16.638 C23.247,14,24,14.753,24,15.681v16.638C24,33.247,23.247,34,22.319,34z"
-                        ></path>
-                        <path
-                            fill="#fff"
-                            d="M18.403 19L16.857 26.264 15.144 19 12.957 19 11.19 26.489 9.597 19 7.641 19 9.985 29 12.337 29 14.05 21.311 15.764 29 18.015 29 20.359 19z"
-                        ></path>
-                    </svg>
-                    <!-- FIN WORD-->
-                    <!-- EXCEL-->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="80" height="80">
-                        <path fill="#169154" d="M29,6H15.744C14.781,6,14,6.781,14,7.744v7.259h15V6z"></path>
-                        <path fill="#18482a" d="M14,33.054v7.202C14,41.219,14.781,42,15.743,42H29v-8.946H14z"></path>
-                        <path fill="#0c8045" d="M14 15.003H29V24.005000000000003H14z"></path>
-                        <path fill="#17472a" d="M14 24.005H29V33.055H14z"></path>
-                        <g>
-                            <path fill="#29c27f" d="M42.256,6H29v9.003h15V7.744C44,6.781,43.219,6,42.256,6z"></path>
-                            <path fill="#27663f" d="M29,33.054V42h13.257C43.219,42,44,41.219,44,40.257v-7.202H29z"></path>
-                            <path fill="#19ac65" d="M29 15.003H44V24.005000000000003H29z"></path>
-                            <path fill="#129652" d="M29 24.005H44V33.055H29z"></path>
-                        </g>
-                        <path
-                            fill="#0c7238"
-                            d="M22.319,34H5.681C4.753,34,4,33.247,4,32.319V15.681C4,14.753,4.753,14,5.681,14h16.638 C23.247,14,24,14.753,24,15.681v16.638C24,33.247,23.247,34,22.319,34z"
-                        ></path>
-                        <path
-                            fill="#fff"
-                            d="M9.807 19L12.193 19 14.129 22.754 16.175 19 18.404 19 15.333 24 18.474 29 16.123 29 14.013 25.07 11.912 29 9.526 29 12.719 23.982z"
-                        ></path>
-                    </svg>
-                    <!-- FIN EXCEL-->
-                    <!-- POWERPOINT-->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="80" height="80">
-                        <path fill="#dc4c2c" d="M8,24c0,9.941,8.059,18,18,18s18-8.059,18-18H26H8z"></path>
-                        <path fill="#f7a278" d="M26,6v18h18C44,14.059,35.941,6,26,6z"></path>
-                        <path fill="#c06346" d="M26,6C16.059,6,8,14.059,8,24h18V6z"></path>
-                        <path
-                            fill="#9b341f"
-                            d="M22.319,34H5.681C4.753,34,4,33.247,4,32.319V15.681C4,14.753,4.753,14,5.681,14h16.638 C23.247,14,24,14.753,24,15.681v16.638C24,33.247,23.247,34,22.319,34z"
-                        ></path>
-                        <path
-                            fill="#fff"
-                            d="M14.673,19.012H10v10h2.024v-3.521H14.3c1.876,0,3.397-1.521,3.397-3.397v-0.058 C17.697,20.366,16.343,19.012,14.673,19.012z M15.57,22.358c0,0.859-0.697,1.556-1.556,1.556h-1.99v-3.325h1.99 c0.859,0,1.556,0.697,1.556,1.556V22.358z"
-                        ></path>
-                    </svg>
-                    <!-- FIN POWERPOINT-->
-                    <!-- PHOTOSHOP-->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewbox="0 0 48 48">
-                        <path
-                            fill="#03A9F4"
-                            d="M6,10c0-2.209,1.791-4,4-4h28c2.209,0,4,1.791,4,4v28c0,2.209-1.791,4-4,4H10c-2.209,0-4-1.791-4-4V10z"
-                        ></path>
-                        <path
-                            fill="#020F16"
-                            d="M20.016,19.174h-2.002v4.434h1.973c0.547,0,0.97-0.179,1.27-0.537s0.449-0.879,0.449-1.563c0-0.71-0.153-1.274-0.459-1.694S20.53,19.181,20.016,19.174z"
-                        ></path>
-                        <path
-                            fill="#020F16"
-                            d="M9,9v30h30V9H9z M23.365,24.789C22.539,25.597,21.393,26,19.928,26h-1.914v5h-2.871V16.781h4.844c1.406,0,2.528,0.437,3.364,1.309s1.255,2.005,1.255,3.398S24.192,23.981,23.365,24.789z M32.682,30.336c-0.709,0.573-1.641,0.859-2.793,0.859c-0.775,0-1.459-0.151-2.051-0.454s-1.057-0.725-1.392-1.265s-0.503-1.123-0.503-1.748h2.627c0.014,0.481,0.125,0.843,0.337,1.084s0.558,0.361,1.04,0.361c0.742,0,1.113-0.335,1.113-1.006c0-0.234-0.112-0.451-0.337-0.649S30,27.052,29.225,26.713c-1.139-0.462-1.922-0.94-2.349-1.436s-0.64-1.11-0.64-1.846c0-0.925,0.334-1.688,1.001-2.29s1.552-0.903,2.651-0.903c1.158,0,2.086,0.3,2.783,0.898s1.045,1.403,1.045,2.412h-2.764c0-0.859-0.357-1.289-1.074-1.289c-0.293,0-0.533,0.091-0.723,0.273s-0.283,0.437-0.283,0.762c0,0.234,0.104,0.441,0.313,0.62s0.699,0.435,1.475,0.767c1.127,0.417,1.922,0.881,2.388,1.392s0.698,1.174,0.698,1.987C33.746,29.005,33.391,29.763,32.682,30.336z"
-                        ></path>
-                    </svg>
-                    <!-- FIN PHOTOSHOP-->
-                    <!-- PREMIERE PRO-->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="80" height="80">
-                        <path
-                            fill="#e040fb"
-                            d="M6,10c0-2.209,1.791-4,4-4h28c2.209,0,4,1.791,4,4v28c0,2.209-1.791,4-4,4H10c-2.209,0-4-1.791-4-4 V10z"
-                        ></path>
-                        <path
-                            fill="#020f16"
-                            d="M9,9v30h30V9H9z M21.016,19.174h-2.002v4.434h1.973c0.547,0,0.97-0.179,1.27-0.537 s0.449-0.879,0.449-1.563c0-0.71-0.153-1.274-0.459-1.694S21.53,19.181,21.016,19.174z M24.365,24.789 C23.539,25.597,22.393,26,20.928,26h-1.914v5H16V16.781h4.987c1.406,0,2.528,0.437,3.364,1.309s1.255,2.005,1.255,3.398 S25.192,23.981,24.365,24.789z M33.2,23.1L32.3,23c-0.8,0-1.3,0.3-1.5,1v7H28V20.4h2.6l0.1,1.1c0.4-0.9,1-1.3,1.8-1.3 c0.3,0,0.6,0,0.8,0.1L33.2,23.1z"
-                        ></path>
-                    </svg>
-                    <!-- FIN PREMIERE PRO-->
-                </div>
-            </div>
-            <div id="gotoQualif" class="mb-6">⠀</div>
-            <h1 class="title is-1 has-text-centered" style="margin-top: 10vh; margin-bottom: 10vh">QUALIFICATIONS</h1>
-            <div class="columns is-centered is-vcentered">
-                <div class="column is-half centercontent">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        version="1.1"
-                        baseProfile="tiny"
-                        width="200px"
-                        id="YNOV_CAMPUS"
-                        x="0px"
-                        y="0px"
-                        viewBox="0 0 140.3 70.3"
-                        xml:space="preserve"
-                    >
-                        <g>
-                            <path
-                                d="M45.4,57.1c-2.2,0-3.9-1.8-3.9-4.1c0-2.3,1.7-4,3.9-4c1.1,0,2.3,0.6,3.1,1.5l1.1-1.4c-1.1-1.1-2.6-1.8-4.2-1.8   c-3.3,0-5.8,2.5-5.8,5.8c0,3.3,2.5,5.8,5.7,5.8c1.6,0,3.2-0.7,4.3-1.9l-1.1-1.3C47.7,56.6,46.5,57.1,45.4,57.1z"
-                            />
-                            <path
-                                d="M56.8,47.4L52,58.9h1.9l1.1-2.6h5.6l1.1,2.6h2l-4.8-11.5H56.8z M55.6,54.5l2.1-5.1l2.1,5.1H55.6z"
-                            />
-                            <polygon
-                                points="72.9,55 69.2,47.4 67,47.4 67,58.9 68.8,58.9 68.8,50.3 72.2,57.7 73.5,57.7 76.9,50.3 76.9,58.9 78.7,58.9    78.7,47.4 76.5,47.4  "
-                            />
-                            <path
-                                d="M88,47.4h-4.4v11.5h1.9v-3.5H88c2.8,0,4.4-1.5,4.4-4.1C92.3,48.8,90.7,47.4,88,47.4z M87.9,53.7h-2.5v-4.5h2.5   c1.7,0,2.7,0.7,2.7,2.2C90.5,52.9,89.6,53.7,87.9,53.7z"
-                            />
-                            <path
-                                d="M103.7,54.1c0,2-1.1,3.1-2.9,3.1c-1.8,0-3-1.2-3-3.1v-6.7h-1.9v6.7c0,3,1.8,4.8,4.8,4.8c3,0,4.8-1.8,4.8-4.8v-6.7h-1.9   V54.1z"
-                            />
-                            <path
-                                d="M111.9,50.3c0-0.8,0.7-1.2,1.8-1.2c0.8,0,2,0.3,3.2,1.1l0.8-1.7c-1-0.7-2.4-1.2-3.9-1.2c-2.4,0-4,1.2-4,3.2   c0,4.1,6,2.7,6,5.2c0,0.9-0.8,1.4-2.1,1.4c-1.2,0-2.6-0.6-3.7-1.7l-0.8,1.7c1.1,1.1,2.8,1.8,4.5,1.8c2.4,0,4.2-1.3,4.2-3.3   C117.8,51.5,111.9,52.8,111.9,50.3z"
-                            />
-                            <path
-                                d="M86.1,40.2c8,0,14.5-6.4,14.5-14.4s-6.5-14.4-14.5-14.4c-8,0-14.5,6.4-14.5,14.4S78.1,40.2,86.1,40.2z M86.1,18.2   c4.2,0,7.6,3.4,7.6,7.5c0,4.2-3.4,7.5-7.6,7.5c-4.2,0-7.6-3.4-7.6-7.5C78.5,21.6,81.9,18.2,86.1,18.2z"
-                            />
-                            <path
-                                d="M39.7,40.2h6.9l0-14c0-4.3,3.4-7.7,7.6-7.7c4.2,0,7.6,3.4,7.6,7.7v14h6.9l0-14c0-8.1-6.5-14.7-14.5-14.7   c-8,0-14.5,6.6-14.5,14.7V40.2z"
-                            />
-                            <path d="M24.1,26.4c0-1-0.2-1.9-0.5-2.7l-4.7-12.2h-7.4L19.7,33C22.3,32,24.1,29.4,24.1,26.4z" />
-                            <polygon points="117.8,40.2 128.8,11.5 121.4,11.5 110.4,40.2  " />
-                            <path d="M112,26.4c0-1-0.2-1.9-0.5-2.7l-4.7-12.2h-7.4l8.3,21.5C110.2,32,112,29.4,112,26.4z" />
-                            <polygon points="33.5,11.5 15.3,58.9 22.7,58.9 40.9,11.5  " />
-                        </g>
-                    </svg>
-                </div>
-                <div class="column specialcontent">
-                    <h1 class="title is-3">Campus Ynov Bordeaux</h1>
-                    <p class="subtitle is-5">2019 - Présent</p>
-                    <h2 class="subtitle is-5">3ème année de bachelor informatique, spécialité Infrastructure et SI</h2>
-                </div>
-            </div>
-            <div class="columns is-centered is-vcentered mt-6">
-                <div class="column is-half centercontent">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        version="1.1"
-                        id="Layer_1"
-                        x="0px"
-                        y="0px"
-                        width="200px"
-                        viewBox="0 0 330 184"
-                        enable-background="new 0 0 330 184"
-                        xml:space="preserve"
-                    >
-                        <image
-                            id="image0"
-                            width="330"
-                            height="184"
-                            x="0"
-                            y="0"
-                            href="data:image/png;base64,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"
-                        />
-                    </svg>
-                </div>
-                <div class="column specialcontent">
-                    <h1 class="title is-3">Lycée Alfred Kastler</h1>
-                    <p class="subtitle is-5">2018 - 2019</p>
-                    <h2 class="subtitle is-5">
-                        Diplôme du baccalauréat en filière technologique STI2D, spécialité Système d'Information et Numérique
-                    </h2>
-                </div>
-            </div>
-            <div id="gotoExp" class="mb-6">⠀</div>
-            <h1 class="title is-1 has-text-centered" style="margin-top: 10vh; margin-bottom: 10vh">EXPÉRIENCE</h1>
-            <div class="columns centercontent">
-                <div class="column is-half">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        version="1.1"
-                        baseProfile="tiny"
-                        width="200px"
-                        id="YNOV_CAMPUS"
-                        x="0px"
-                        y="0px"
-                        viewBox="0 0 140.3 70.3"
-                        xml:space="preserve"
-                    >
-                        <g>
-                            <path
-                                d="M45.4,57.1c-2.2,0-3.9-1.8-3.9-4.1c0-2.3,1.7-4,3.9-4c1.1,0,2.3,0.6,3.1,1.5l1.1-1.4c-1.1-1.1-2.6-1.8-4.2-1.8   c-3.3,0-5.8,2.5-5.8,5.8c0,3.3,2.5,5.8,5.7,5.8c1.6,0,3.2-0.7,4.3-1.9l-1.1-1.3C47.7,56.6,46.5,57.1,45.4,57.1z"
-                            />
-                            <path
-                                d="M56.8,47.4L52,58.9h1.9l1.1-2.6h5.6l1.1,2.6h2l-4.8-11.5H56.8z M55.6,54.5l2.1-5.1l2.1,5.1H55.6z"
-                            />
-                            <polygon
-                                points="72.9,55 69.2,47.4 67,47.4 67,58.9 68.8,58.9 68.8,50.3 72.2,57.7 73.5,57.7 76.9,50.3 76.9,58.9 78.7,58.9    78.7,47.4 76.5,47.4  "
-                            />
-                            <path
-                                d="M88,47.4h-4.4v11.5h1.9v-3.5H88c2.8,0,4.4-1.5,4.4-4.1C92.3,48.8,90.7,47.4,88,47.4z M87.9,53.7h-2.5v-4.5h2.5   c1.7,0,2.7,0.7,2.7,2.2C90.5,52.9,89.6,53.7,87.9,53.7z"
-                            />
-                            <path
-                                d="M103.7,54.1c0,2-1.1,3.1-2.9,3.1c-1.8,0-3-1.2-3-3.1v-6.7h-1.9v6.7c0,3,1.8,4.8,4.8,4.8c3,0,4.8-1.8,4.8-4.8v-6.7h-1.9   V54.1z"
-                            />
-                            <path
-                                d="M111.9,50.3c0-0.8,0.7-1.2,1.8-1.2c0.8,0,2,0.3,3.2,1.1l0.8-1.7c-1-0.7-2.4-1.2-3.9-1.2c-2.4,0-4,1.2-4,3.2   c0,4.1,6,2.7,6,5.2c0,0.9-0.8,1.4-2.1,1.4c-1.2,0-2.6-0.6-3.7-1.7l-0.8,1.7c1.1,1.1,2.8,1.8,4.5,1.8c2.4,0,4.2-1.3,4.2-3.3   C117.8,51.5,111.9,52.8,111.9,50.3z"
-                            />
-                            <path
-                                d="M86.1,40.2c8,0,14.5-6.4,14.5-14.4s-6.5-14.4-14.5-14.4c-8,0-14.5,6.4-14.5,14.4S78.1,40.2,86.1,40.2z M86.1,18.2   c4.2,0,7.6,3.4,7.6,7.5c0,4.2-3.4,7.5-7.6,7.5c-4.2,0-7.6-3.4-7.6-7.5C78.5,21.6,81.9,18.2,86.1,18.2z"
-                            />
-                            <path
-                                d="M39.7,40.2h6.9l0-14c0-4.3,3.4-7.7,7.6-7.7c4.2,0,7.6,3.4,7.6,7.7v14h6.9l0-14c0-8.1-6.5-14.7-14.5-14.7   c-8,0-14.5,6.6-14.5,14.7V40.2z"
-                            />
-                            <path d="M24.1,26.4c0-1-0.2-1.9-0.5-2.7l-4.7-12.2h-7.4L19.7,33C22.3,32,24.1,29.4,24.1,26.4z" />
-                            <polygon points="117.8,40.2 128.8,11.5 121.4,11.5 110.4,40.2  " />
-                            <path d="M112,26.4c0-1-0.2-1.9-0.5-2.7l-4.7-12.2h-7.4l8.3,21.5C110.2,32,112,29.4,112,26.4z" />
-                            <polygon points="33.5,11.5 15.3,58.9 22.7,58.9 40.9,11.5  " />
-                        </g>
-                    </svg>
-                </div>
-                <div class="column specialcontent">
-                    <h1 class="title is-3">Campus Ynov Bordeaux</h1>
-                    <p class="subtitle is-5">2019 - Présent</p>
-                    <h2 class="subtitle is-5">
-                        Mentor dans la filière informatique au campus Ynov Bordeaux, en charge du suivi et de l'accompagnement des
-                        futurs étudiants dans le campus
-                    </h2>
-                </div>
-            </div>
-            <div class="columns mt-6 centercontent">
-                <div class="column is-half">
-                    <img src="../assets/charles.png" width="150px" alt="" />
-                </div>
-                <div class="column specialcontent">
-                    <h1 class="title is-3">SIH Hôpital Charles Perrens</h1>
-                    <p class="subtitle is-5">2020</p>
-                    <h2 class="subtitle is-5">
-                        Stage au sein du Système d'Information Hospitalier, en charge de l'assistance au personnel hospitalier et
-                        la maintenance du matériel
-                    </h2>
-                </div>
-            </div>
-            <div class="columns mt-6 centercontent">
-                <div class="column is-half">
-                    <img src="../assets/skimevo.png" width="250px" alt="" />
-                </div>
-                <div class="column specialcontent">
-                    <h1 class="title is-3">Association Skim'Evolution</h1>
-                    <p class="subtitle is-5">2019</p>
-                    <h2 class="subtitle is-5">
-                        Moniteur au sein de l'association Skim'Evolution, avec pour objectif d'apprendre aux volontaires les bases
-                        du skimboarding, et en charge de l'installation des structures d'apprentissage
-                    </h2>
-                </div>
-            </div>
-            <div class="columns mt-6 centercontent">
-                <div class="column is-half">
-                    <svg
-                        xmlns:svg="http://www.w3.org/2000/svg"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        version="1.1"
-                        width="200px"
-                    >
-                        <defs id="defs6154">
-                            <clipPath id="clipPath46">
-                                <path
-                                    d="M 3064.63,408.281 C 2860.11,544.48 2525.61,540.656 2464.93,536.68 l 0,-312.149 540.97,0 58.73,183.75"
-                                    id="path48"
-                                />
-                            </clipPath>
-                            <clipPath id="clipPath52">
-                                <path d="m 2464.93,537.43 0,-312.899 599.7,0 0,312.899 -599.7,0" id="path54" />
-                            </clipPath>
-                            <clipPath id="clipPath58">
-                                <path d="m 2464.03,223.707 602.04,0 0,315.098 -602.04,0 0,-315.098 z" id="path60" />
-                            </clipPath>
-                            <clipPath id="clipPath64">
-                                <path d="m 2464.03,538.805 0,-315.098 602.04,0 0,315.098 -602.04,0 z" id="path66" />
-                            </clipPath>
-                            <clipPath id="clipPath52-4">
-                                <path d="m 2464.93,537.43 0,-312.899 599.7,0 0,312.899 -599.7,0" id="path54-6" />
-                            </clipPath>
-                            <clipPath id="clipPath58-2">
-                                <path d="m 2464.03,223.707 602.04,0 0,315.098 -602.04,0 0,-315.098 z" id="path60-8" />
-                            </clipPath>
-                            <clipPath id="clipPath64-9">
-                                <path d="m 2464.03,538.805 0,-315.098 602.04,0 0,315.098 -602.04,0 z" id="path66-6" />
-                            </clipPath>
-                            <clipPath id="clipPath6339">
-                                <path
-                                    d="m 356.40607,193.98139 c -30.678,-20.42985 -80.853,-19.85625 -89.955,-19.25985 l 0,46.82235 81.1455,0 8.8095,-27.5625"
-                                    id="path6341"
-                                />
-                            </clipPath>
-                        </defs>
-                        <g transform="translate(-236.98071,-174.52236)" id="layer1">
-                            <image
-                                xlink:href="data:image/png;base64,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"
-                                x="266.29657"
-                                y="174.35854"
-                                width="90.480003"
-                                height="47.43"
-                                transform="matrix(1.3276122,0,0,1.3276122,-116.76298,-57.17566)"
-                                clip-path="url(#clipPath6339)"
-                                id="image70"
-                            />
-                            <path
-                                d="m 323.09163,201.21749 -5.43856,23.66841 c -0.94792,0.13283 -2.5769,0.12904 -4.11029,0.001 -5.57995,-0.46122 -13.55957,-4.28295 -11.29532,-11.26944 1.69868,-5.21951 7.89995,-8.38726 15.44145,-8.97293 1.32629,-0.0786 2.38971,-3.51386 2.38971,-3.51386 -0.0279,0 -0.40028,-0.0426 -1.03156,-0.0192 -10.78353,0.35626 -17.97056,3.70344 -21.76023,9.84418 l -0.67907,0 2.03523,-9.73844 -5.61381,0 -3.79564,18.25812 c -2.43949,-8.6557 -7.36228,-16.09862 -18.68548,-18.00381 -2.49326,-0.4184 -3.65824,-0.53828 -6.55575,-0.51956 -8.27036,0.0645 -15.70632,2.40284 -16.96688,7.20256 -2.12883,8.10647 16.78168,6.93969 16.43716,12.33345 -0.2071,3.27588 -5.88265,5.10779 -10.44499,5.06816 -3.39138,-0.0382 -7.89199,-1.03394 -9.93319,-1.58537 l -1.68076,3.57679 c 3.22212,0.76769 6.61151,1.34719 9.86151,1.37686 13.51774,0.12984 18.78106,-4.51175 19.38048,-8.86798 1.06541,-7.98061 -17.88493,-7.2159 -16.46704,-12.21536 0.80653,-3.1319 6.80866,-3.6897 10.26775,-3.6662 1.49954,0.009 2.78202,0.12294 3.96293,0.3469 0.47993,0.14239 0.95986,-0.2077 1.42984,-1.00128 l -1.5553,7.49271 c -0.29872,1.42605 0.1394,2.52133 1.82414,4.27856 1.14108,1.18629 2.19454,2.33355 2.42554,1.22433 0.70497,-3.44834 1.43383,-6.94806 2.14675,-10.3747 8.76822,10.10645 13.06968,22.52075 13.06968,22.52075 l 5.15977,0 2.19454,-10.50931 0.0777,0.43174 c 1.07935,5.74624 8.85783,10.09311 18.74523,10.34681 3.35554,0.0832 5.81693,-0.095 7.11932,-0.66194 1.30438,-0.56796 2.08103,-1.21517 2.50122,-3.04707 0.32659,-1.41889 1.85799,-8.08397 1.85799,-8.08397 l 13.00595,0 c 0.79856,0 1.4856,-0.50721 2.77007,-4.26123 l -14.79823,0 1.79825,-7.82488 17.1262,0 c 0.53768,0 1.31831,0.0232 2.63862,-3.83508 l -24.85489,0"
-                                id="path72"
-                                style="fill: #706d6e; fill-opacity: 1; fill-rule: nonzero; stroke: none"
-                            />
-                            <path
-                                d="m 324.14509,200.36337 -5.43856,23.66602 c -1.5314,0.13462 -3.07276,0.13143 -4.60615,0 -5.58195,-0.45982 -13.50779,-4.40143 -11.24355,-11.38613 1.70067,-5.22051 7.89996,-8.38507 15.44544,-8.97453 1.3223,-0.0779 2.38771,-3.51306 2.38771,-3.51306 -0.0259,0 -0.40027,-0.0396 -1.03354,-0.0216 -10.78353,0.36164 -18.39075,3.28584 -22.18241,9.42419 -0.10157,0.15632 -0.19118,0.31424 -0.28278,0.47296 l 2.00735,-9.66774 -5.18566,0 -3.96491,19.06783 c -3.26394,-8.6549 -7.62116,-16.90913 -18.94237,-18.81572 -2.49326,-0.41859 -3.66023,-0.53768 -6.55575,-0.51816 -8.27036,0.0653 -15.70831,2.40145 -16.96888,7.20097 -2.12882,8.10646 16.78168,6.93969 16.43916,12.32966 -0.21109,3.28126 -5.88464,5.11476 -10.443,5.07354 -3.39337,-0.0397 -7.15715,-0.85651 -9.26009,-1.41351 l -1.68076,3.57599 c 2.88756,0.60918 5.93642,1.17315 9.18641,1.20501 13.51775,0.13223 18.78107,-4.50957 19.38049,-8.87197 1.06541,-7.97583 -17.88493,-7.21033 -16.46704,-12.21217 0.80652,-3.13489 6.80667,-3.6895 10.26576,-3.6662 1.50153,0.0106 2.78599,0.12293 3.96491,0.3469 0.63128,0.18739 1.26655,-0.47993 1.88389,-1.89663 0.0299,-0.0831 0.20113,-0.13601 0.20113,0.0367 0,0 -1.40793,6.77699 -1.83211,8.81521 -0.29672,1.42346 -0.24295,2.05912 1.44577,3.81476 1.1371,1.18708 2.19455,2.33374 2.42555,1.22671 0.70496,-3.44993 1.43382,-6.95045 2.14277,-10.37549 8.7702,10.10486 13.07167,22.51996 13.07167,22.51996 l 5.18963,0 2.17662,-10.46032 0.0677,0.38354 c 1.07537,5.74704 8.85783,10.09331 18.74522,10.34522 3.35554,0.0848 5.81494,-0.0943 7.12131,-0.66035 1.3004,-0.56796 2.07905,-1.21676 2.49525,-3.04707 0.33058,-1.42048 1.85999,-8.08636 1.85999,-8.08636 l 13.00794,0 c 0.79856,0 1.48361,-0.50621 2.77405,-4.26044 l -14.80421,0 1.79626,-7.82089 17.1262,0 c 0.54167,0 1.32031,0.0202 2.64261,-3.83667 l -24.35903,0"
-                                id="path74"
-                                style="fill: #ffffff; fill-opacity: 1; fill-rule: nonzero; stroke: none"
-                            />
-                            <path
-                                d="m 253.82214,207.98374 c -1.99939,5.66837 15.86364,3.92448 16.16832,12.37168 2.49923,-8.23332 -16.1962,-7.67174 -16.16832,-12.37168 m 22.34371,-5.03152 c -0.008,0.59742 8.33807,2.61832 13.04777,20.49129 l 0.52574,-2.53049 c -4.15012,-11.54863 -8.6089,-15.6629 -13.57351,-17.9608 m 69.89679,-0.9296 c 0.27482,0.007 0.49587,-0.69699 0.54366,-0.83938 l -20.57733,0 -0.0398,0.17744 c 0,0 15.02326,0.73344 20.07349,0.66194 m -27.58911,23.02578 c -1.88786,0.11975 -3.91313,0.12294 -5.46843,-0.0366 -6.76684,-0.70556 -11.87483,-4.96361 -11.51438,-9.70259 l -0.0518,0 c -1.36014,5.59389 5.54013,11.7641 16.79761,10.77616 l 0.23698,-1.03693"
-                                id="path82"
-                                style="fill: #ddd2d8; fill-opacity: 1; fill-rule: nonzero; stroke: none"
-                            />
-                        </g>
-                    </svg>
-                </div>
-                <div class="column specialcontent">
-                    <h1 class="title is-3">SNCF - Gare de Bordeaux Saint-Jean</h1>
-                    <p class="subtitle is-5">2015</p>
-                    <h2 class="subtitle is-5">Stage d'observation dans l'UP Informatique de la gare de Bordeaux Saint-Jean</h2>
-                </div>
-                <div id="gotoProj" class="mb-6">⠀</div>
-                <h1 class="title is-1 has-text-centered" style="margin-top: 10vh; margin-bottom: 10vh">PROJETS</h1>
-            </div>
-            <!-- SCRIPTS-->
-            <script
-                src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-                integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-                crossorigin="anonymous"
-                referrerpolicy="no-referrer"
-            ></script>
-            <script src="../style/style.js"></script>
-            <!-- -->
+            <p class="is-size-4-touch is-size-3-desktop mt-6 mb-6">
+                Je suis également développeur web à mes heures perdues, et j'aime beaucoup aider les autres dans ce
+                domaine et dans leurs projets. Étant mentor, j'ai en main toutes les méthodes et
+                connaissances pédagogiques pour guider une classe et mener un projet.
+            </p>
         </div>
-    </body>
+
+        <h2 class="title is-3 has-text-centered mt-6 mb-6">Mes hobbys</h2>
+        <div class="columns is-centered">
+            <div class="column is-3 has-text-centered">
+                <h3 class="subtitle is-4">L'informatique, en particulier l'infra réseau</h3>
+                <img class="hobbyIcon" src="assets/svg/laptop.svg" alt="Laptop icon" />
+            </div>
+            <div class="column is-3 has-text-centered">
+                <h3 class="subtitle is-4">Les nouvelles technologies</h3>
+                <img class="hobbyIcon" src="assets/svg/blockchain-technology.svg" alt="New technologies icon" />
+            </div>
+            <div class="column is-3 has-text-centered">
+                <h3 class="subtitle is-4">Le basketball, que j'ai pratiqué 2 ans en club</h3>
+                <img class="hobbyIcon" src="assets/svg/basketball.svg" alt="Laptop icon" />
+            </div>
+            <div class="column is-3 has-text-centered">
+                <h3 class="subtitle is-4">Le football</h3>
+                <img class="hobbyIcon" src="assets/svg/soccer.svg" alt="Laptop icon" />
+            </div>
+        </div>
+        <div class="columns is-centered">
+            <div class="column is-3 has-text-centered">
+                <h3 class="subtitle is-4">Les jeux vidéo</h3>
+                <img class="hobbyIcon" src="assets/svg/space.svg" alt="Laptop icon" />
+            </div>
+            <div class="column is-3 has-text-centered">
+                <h3 class="subtitle is-4">Le montage vidéo</h3>
+                <img class="hobbyIcon" src="assets/svg/online-video.svg" alt="Laptop icon" />
+            </div>
+        </div>
+        <div id="gotoComp" class="mb-6">⠀</div>
+        <h1 class="title is-1 has-text-centered" style="margin-top: 10vh; margin-bottom: 10vh">COMPÉTENCES</h1>
+        <div class="columns is-centered is-vcentered">
+            <div class="column is-size-3 is-7 centercontent">
+                PROGRAMMATION
+                <ul>
+                    <li class="is-size-6 mt-4">Langages : HTML/CSS, JavaScript, PHP, Python, Go, C#, Bash, Powershell
+                    </li>
+                    <li class="is-size-6">Frameworks : Bootstrap, Bulma, ExpressJS, Symfony, ASP .NET</li>
+                </ul>
+            </div>
+            <div class="column has-text-center">
+                <!-- HTML-->
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="80" height="80">
+                    <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
+                    <path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
+                    <path fill="#FFF"
+                        d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"></path>
+                    <path fill="#EEE"
+                        d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z">
+                    </path>
+                </svg>
+                <!-- FIN HTML-->
+                <!-- CSS-->
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="80" height="80">
+                    <path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
+                    <path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
+                    <path fill="#FFF"
+                        d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z">
+                    </path>
+                    <path fill="#EEE"
+                        d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z">
+                    </path>
+                </svg>
+                <!-- FIN CSS-->
+                <!-- JS-->
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="80" height="80">
+                    <path fill="#ffd600" d="M6,42V6h36v36H6z"></path>
+                    <path fill="#000001"
+                        d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z">
+                    </path>
+                </svg>
+                <!-- FIN JS-->
+                <!-- PHP-->
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewbox="0 0 48 48">
+                    <path fill="#00BCD4"
+                        d="M42,37c0,2.762-2.238,5-5,5H11c-2.762,0-5-2.238-5-5V11c0-2.762,2.238-5,5-5h26c2.762,0,5,2.238,5,5V37z">
+                    </path>
+                    <path fill="#FFF"
+                        d="M14 25.483V29h-1.993V19h3.76c.984 0 1.77.307 2.355.92C18.707 20.533 19 21.33 19 22.311s-.289 1.753-.868 2.321-1.381.852-2.406.852H14zM14.017 23.801h1.75c.383 0 .679-.125.889-.378.21-.252.314-.618.314-1.099 0-.499-.107-.896-.321-1.192-.214-.294-.501-.444-.861-.449h-1.771V23.801zM31 25.483V29h-1.993V19h3.76c.984 0 1.77.307 2.355.92C35.707 20.533 36 21.33 36 22.311s-.289 1.753-.868 2.321-1.381.852-2.406.852H31zM31.017 23.801h1.75c.383 0 .679-.125.889-.378.21-.252.314-.618.314-1.099 0-.499-.107-.896-.321-1.192-.214-.294-.501-.444-.861-.449h-1.771V23.801zM27 29h-2v-4.279h-3.02V29H20V19h1.98v4H25v-4h2V29z">
+                    </path>
+                </svg>
+                <!-- FIN PHP-->
+                <!-- PYTHON-->
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewbox="0 0 48 48">
+                    <path fill="#0277BD"
+                        d="M24.047,5c-1.555,0.005-2.633,0.142-3.936,0.367c-3.848,0.67-4.549,2.077-4.549,4.67V14h9v2H15.22h-4.35c-2.636,0-4.943,1.242-5.674,4.219c-0.826,3.417-0.863,5.557,0,9.125C5.851,32.005,7.294,34,9.931,34h3.632v-5.104c0-2.966,2.686-5.896,5.764-5.896h7.236c2.523,0,5-1.862,5-4.377v-8.586c0-2.439-1.759-4.263-4.218-4.672C27.406,5.359,25.589,4.994,24.047,5z M19.063,9c0.821,0,1.5,0.677,1.5,1.502c0,0.833-0.679,1.498-1.5,1.498c-0.837,0-1.5-0.664-1.5-1.498C17.563,9.68,18.226,9,19.063,9z">
+                    </path>
+                    <path fill="#FFC107"
+                        d="M23.078,43c1.555-0.005,2.633-0.142,3.936-0.367c3.848-0.67,4.549-2.077,4.549-4.67V34h-9v-2h9.343h4.35c2.636,0,4.943-1.242,5.674-4.219c0.826-3.417,0.863-5.557,0-9.125C41.274,15.995,39.831,14,37.194,14h-3.632v5.104c0,2.966-2.686,5.896-5.764,5.896h-7.236c-2.523,0-5,1.862-5,4.377v8.586c0,2.439,1.759,4.263,4.218,4.672C19.719,42.641,21.536,43.006,23.078,43z M28.063,39c-0.821,0-1.5-0.677-1.5-1.502c0-0.833,0.679-1.498,1.5-1.498c0.837,0,1.5,0.664,1.5,1.498C29.563,38.32,28.899,39,28.063,39z">
+                    </path>
+                </svg>
+                <!-- FIN PYTHON-->
+                <!-- GO-->
+                <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    version="1.1" width="80" height="80" x="0px" y="0px" viewbox="0 0 205.4 76.7"
+                    style="enable-background: new 0 0 205.4 76.7" xml:space="preserve">
+                    <style type="text/css">
+                        .st0 {
+                            fill: #00acd7;
+                        }
+                    </style>
+                    <g>
+                        <g>
+                            <g>
+                                <g>
+                                    <path class="st0"
+                                        d="M15.5,23.2c-0.4,0-0.5-0.2-0.3-0.5l2.1-2.7c0.2-0.3,0.7-0.5,1.1-0.5h35.7c0.4,0,0.5,0.3,0.3,0.6l-1.7,2.6      c-0.2,0.3-0.7,0.6-1,0.6L15.5,23.2z">
+                                    </path>
+                                </g>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <g>
+                                    <path class="st0"
+                                        d="M0.4,32.4c-0.4,0-0.5-0.2-0.3-0.5l2.1-2.7c0.2-0.3,0.7-0.5,1.1-0.5h45.6c0.4,0,0.6,0.3,0.5,0.6l-0.8,2.4      c-0.1,0.4-0.5,0.6-0.9,0.6L0.4,32.4z">
+                                    </path>
+                                </g>
+                            </g>
+                        </g>
+                        <g>
+                            <g>
+                                <g>
+                                    <path class="st0"
+                                        d="M24.6,41.6c-0.4,0-0.5-0.3-0.3-0.6l1.4-2.5c0.2-0.3,0.6-0.6,1-0.6h20c0.4,0,0.6,0.3,0.6,0.7L47.1,41      c0,0.4-0.4,0.7-0.7,0.7L24.6,41.6z">
+                                    </path>
+                                </g>
+                            </g>
+                        </g>
+                        <g>
+                            <g id="CXHf1q_3_">
+                                <g>
+                                    <g>
+                                        <path class="st0"
+                                            d="M128.4,21.4c-6.3,1.6-10.6,2.8-16.8,4.4c-1.5,0.4-1.6,0.5-2.9-1c-1.5-1.7-2.6-2.8-4.7-3.8       c-6.3-3.1-12.4-2.2-18.1,1.5c-6.8,4.4-10.3,10.9-10.2,19c0.1,8,5.6,14.6,13.5,15.7c6.8,0.9,12.5-1.5,17-6.6       c0.9-1.1,1.7-2.3,2.7-3.7c-3.6,0-8.1,0-19.3,0c-2.1,0-2.6-1.3-1.9-3c1.3-3.1,3.7-8.3,5.1-10.9c0.3-0.6,1-1.6,2.5-1.6       c5.1,0,23.9,0,36.4,0c-0.2,2.7-0.2,5.4-0.6,8.1c-1.1,7.2-3.8,13.8-8.2,19.6c-7.2,9.5-16.6,15.4-28.5,17       c-9.8,1.3-18.9-0.6-26.9-6.6c-7.4-5.6-11.6-13-12.7-22.2c-1.3-10.9,1.9-20.7,8.5-29.3c7.1-9.3,16.5-15.2,28-17.3       c9.4-1.7,18.4-0.6,26.5,4.9c5.3,3.5,9.1,8.3,11.6,14.1C130,20.6,129.6,21.1,128.4,21.4z">
+                                        </path>
+                                    </g>
+                                    <g>
+                                        <path class="st0"
+                                            d="M161.5,76.7c-9.1-0.2-17.4-2.8-24.4-8.8c-5.9-5.1-9.6-11.6-10.8-19.3c-1.8-11.3,1.3-21.3,8.1-30.2       c7.3-9.6,16.1-14.6,28-16.7c10.2-1.8,19.8-0.8,28.5,5.1c7.9,5.4,12.8,12.7,14.1,22.3c1.7,13.5-2.2,24.5-11.5,33.9       c-6.6,6.7-14.7,10.9-24,12.8C166.8,76.3,164.1,76.4,161.5,76.7z M185.3,36.3c-0.1-1.3-0.1-2.3-0.3-3.3       c-1.8-9.9-10.9-15.5-20.4-13.3c-9.3,2.1-15.3,8-17.5,17.4c-1.8,7.8,2,15.7,9.2,18.9c5.5,2.4,11,2.1,16.3-0.6       C180.5,51.3,184.8,44.9,185.3,36.3z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <!-- FIN GOLANG-->
+                <!-- CSHARP-->
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="80" height="80">
+                    <path fill="#37474f" fill-rule="evenodd"
+                        d="M22.903,3.286c0.679-0.381,1.515-0.381,2.193,0 c3.355,1.883,13.451,7.551,16.807,9.434C42.582,13.1,43,13.804,43,14.566c0,3.766,0,15.101,0,18.867 c0,0.762-0.418,1.466-1.097,1.847c-3.355,1.883-13.451,7.551-16.807,9.434c-0.679,0.381-1.515,0.381-2.193,0 c-3.355-1.883-13.451-7.551-16.807-9.434C5.418,34.899,5,34.196,5,33.434c0-3.766,0-15.101,0-18.867 c0-0.762,0.418-1.466,1.097-1.847C9.451,10.837,19.549,5.169,22.903,3.286z"
+                        clip-rule="evenodd"></path>
+                    <path fill="#546e7a" fill-rule="evenodd"
+                        d="M5.304,34.404C5.038,34.048,5,33.71,5,33.255 c0-3.744,0-15.014,0-18.759c0-0.758,0.417-1.458,1.094-1.836c3.343-1.872,13.405-7.507,16.748-9.38 c0.677-0.379,1.594-0.371,2.271,0.008c3.343,1.872,13.371,7.459,16.714,9.331c0.27,0.152,0.476,0.335,0.66,0.576L5.304,34.404z"
+                        clip-rule="evenodd"></path>
+                    <path fill="#fff" fill-rule="evenodd"
+                        d="M24,10c7.727,0,14,6.273,14,14s-6.273,14-14,14 s-14-6.273-14-14S16.273,10,24,10z M24,17c3.863,0,7,3.136,7,7c0,3.863-3.137,7-7,7s-7-3.137-7-7C17,20.136,20.136,17,24,17z"
+                        clip-rule="evenodd"></path>
+                    <path fill="#455a64" fill-rule="evenodd"
+                        d="M42.485,13.205c0.516,0.483,0.506,1.211,0.506,1.784 c0,3.795-0.032,14.589,0.009,18.384c0.004,0.396-0.127,0.813-0.323,1.127L23.593,24L42.485,13.205z"
+                        clip-rule="evenodd"></path>
+                    <path fill="#fff" fill-rule="evenodd" d="M34 20H35V28H34zM37 20H38V28H37z" clip-rule="evenodd">
+                    </path>
+                    <path fill="#fff" fill-rule="evenodd" d="M32 25H40V26H32zM32 22H40V23H32z" clip-rule="evenodd">
+                    </path>
+                </svg>
+                <!-- FIN CSHARP-->
+                <!-- BASH-->
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="80" height="80">
+                    <rect width="14" height="7" x="17" y="8" fill="#999"></rect>
+                    <path fill="#666" d="M43,8H31v7h14v-5C45,8.895,44.105,8,43,8z"></path>
+                    <path fill="#ccc" d="M5,8c-1.105,0-2,0.895-2,2v5h14V8H5z"></path>
+                    <lineargradient id="u8UbA7GmcDgkSbOtELVhra" x1="3.594" x2="44.679" y1="13.129" y2="39.145"
+                        gradientunits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#4c4c4c"></stop>
+                        <stop offset="1" stop-color="#343434"></stop>
+                    </lineargradient>
+                    <path fill="#000000" d="M45,13H3v25c0,1.105,0.895,2,2,2h38c1.105,0,2-0.895,2-2V13z"></path>
+                    <path
+                        d="M10.597,18.314l-2.319,2.319c-0.514,0.514-0.514,1.347,0,1.861l3.978,3.978l-4.033,4.033	c-0.514,0.514-0.514,1.347,0,1.861l2.319,2.319c0.514,0.514,1.347,0.514,1.861,0l7.282-7.283c0.514-0.514,0.514-1.347,0-1.861	l-7.228-7.228C11.944,17.8,11.111,17.8,10.597,18.314z"
+                        opacity=".05"></path>
+                    <path
+                        d="M10.889,18.729l-2.197,2.197c-0.352,0.352-0.352,0.924,0,1.276l4.271,4.271l-4.325,4.325	c-0.352,0.352-0.352,0.924,0,1.276l2.197,2.197c0.353,0.352,0.924,0.352,1.276,0l7.16-7.161c0.352-0.352,0.352-0.924,0-1.276	l-7.106-7.106C11.813,18.376,11.242,18.376,10.889,18.729z"
+                        opacity=".07"></path>
+                    <lineargradient id="u8UbA7GmcDgkSbOtELVhrb" x1="10.135" x2="15.002" y1="32.774" y2="27.907"
+                        gradientunits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#a0a0a0"></stop>
+                        <stop offset=".569" stop-color="#9e9e9e"></stop>
+                        <stop offset=".774" stop-color="#979797"></stop>
+                        <stop offset=".92" stop-color="#8c8c8c"></stop>
+                        <stop offset="1" stop-color="#818181"></stop>
+                    </lineargradient>
+                    <path fill="url(#u8UbA7GmcDgkSbOtELVhrb)"
+                        d="M9.053,31.09l6.983-6.983c0.191-0.191,0.501-0.191,0.692,0l2.075,2.075	c0.191,0.191,0.191,0.501,0,0.692l-6.983,6.983c-0.191,0.191-0.501,0.191-0.692,0l-2.075-2.075	C8.862,31.591,8.862,31.281,9.053,31.09z">
+                    </path>
+                    <path fill="#d0d0d0"
+                        d="M11.873,19.143l6.983,6.983c0.191,0.191,0.191,0.501,0,0.692l-2.075,2.075	c-0.191,0.191-0.501,0.191-0.692,0L9.107,21.91c-0.191-0.191-0.191-0.501,0-0.692l2.075-2.075	C11.373,18.952,11.682,18.952,11.873,19.143z">
+                    </path>
+                    <path
+                        d="M22,32v4c0,0.552,0.448,1,1,1h17c0.552,0,1-0.448,1-1v-4c0-0.552-0.448-1-1-1H23	C22.448,31,22,31.448,22,32z"
+                        opacity=".05"></path>
+                    <path
+                        d="M39.909,36.5H23.091c-0.326,0-0.591-0.265-0.591-0.591v-3.818c0-0.326,0.265-0.591,0.591-0.591	h16.818c0.326,0,0.591,0.265,0.591,0.591v3.818C40.5,36.235,40.235,36.5,39.909,36.5z"
+                        opacity=".07"></path>
+                    <path fill="#d4d4d4"
+                        d="M23.5,32h16c0.276,0,0.5,0.224,0.5,0.5v3c0,0.276-0.224,0.5-0.5,0.5h-16c-0.276,0-0.5-0.224-0.5-0.5	v-3C23,32.224,23.224,32,23.5,32z">
+                    </path>
+                </svg>
+                <!-- FIN BASH-->
+            </div>
+        </div>
+        <div class="columns is-centered is-vcentered" style="margin-top: 10vh">
+            <div class="column is-size-3 is-7 centercontent">
+                RÉSEAU
+                <ul>
+                    <li class="is-size-6 mt-4">Virtualisation d'équipements réseau, OS serveur, Hyperviseur Type 1,</li>
+                    <li class="is-size-6">Stockage, Réplication, Pare-feux</li>
+                </ul>
+            </div>
+            <div class="column has-text-center">
+                <!-- WINDOWS SERVER-->
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="80" height="80">
+                    <lineargradient id="RucpB_ahqt8VfTW7X2sDFa" x1="9.703" x2="16.585" y1="26.119" y2="37.59"
+                        gradientunits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#1784d8"></stop>
+                        <stop offset="1" stop-color="#0864c5"></stop>
+                    </lineargradient>
+                    <path fill="url(#RucpB_ahqt8VfTW7X2sDFa)"
+                        d="M20,25.026L5.011,25l0.001,11.002c0,0.999,0.737,1.844,1.726,1.981L20,39.818V25.026z"></path>
+                    <lineargradient id="RucpB_ahqt8VfTW7X2sDFb" x1="24.604" x2="44.545" y1="27.13" y2="40.895"
+                        gradientunits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#31abec"></stop>
+                        <stop offset="1" stop-color="#1582d5"></stop>
+                    </lineargradient>
+                    <path fill="url(#RucpB_ahqt8VfTW7X2sDFb)"
+                        d="M22,25.03v15.065l18.722,2.59c1.202,0.166,2.274-0.767,2.274-1.981L43,25.066L22,25.03z"></path>
+                    <lineargradient id="RucpB_ahqt8VfTW7X2sDFc" x1="8.142" x2="25.788" y1="11.699" y2="27.581"
+                        gradientunits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#31abec"></stop>
+                        <stop offset="1" stop-color="#1582d5"></stop>
+                    </lineargradient>
+                    <path fill="url(#RucpB_ahqt8VfTW7X2sDFc)"
+                        d="M20,8.256l-13.278,1.88c-0.987,0.14-1.721,0.985-1.72,1.982L5.014,23H20V8.256z"></path>
+                    <lineargradient id="RucpB_ahqt8VfTW7X2sDFd" x1="25.913" x2="56.031" y1="10.147" y2="30.618"
+                        gradientunits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#54daff"></stop>
+                        <stop offset="1" stop-color="#25a2e5"></stop>
+                    </lineargradient>
+                    <path fill="url(#RucpB_ahqt8VfTW7X2sDFd)"
+                        d="M22,7.973V23h20.995V7.303c0-1.216-1.076-2.151-2.28-1.98L22,7.973z"></path>
+                </svg>
+                <!-- FIN WINDOWS SERVER-->
+                <!-- CISCO-->
+                <svg id="svg24" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100" height="75" fill="#049fd9"
+                    viewbox="0 0 200 230">
+                    <path id="path10"
+                        d="m 106.48,76.238 c -0.282,-0.077 -4.621,-1.196 -9.232,-1.196 -8.73,0 -13.986,4.714 -13.986,11.734 0,6.214 4.397,9.313 9.674,10.98 0.585,0.193 1.447,0.463 2.021,0.653 2.349,0.739 4.224,1.837 4.224,3.739 0,2.127 -2.167,3.504 -6.878,3.504 -4.14,0 -8.109,-1.184 -8.945,-1.395 v 8.637 c 0.466,0.099 5.183,1.025 10.222,1.025 7.248,0 15.539,-3.167 15.539,-12.595 0,-4.573 -2.8,-8.783 -8.947,-10.737 L 97.559,89.755 C 96,89.263 93.217,88.466 93.217,86.181 c 0,-1.805 2.062,-3.076 5.859,-3.076 3.276,0 7.263,1.101 7.404,1.145 z m 80.041,18.243 c 0,5.461 -4.183,9.879 -9.796,9.879 -5.619,0 -9.791,-4.418 -9.791,-9.879 0,-5.45 4.172,-9.87 9.791,-9.87 5.613,0 9.796,4.42 9.796,9.87 m -9.796,-19.427 c -11.544,0 -19.823,8.707 -19.823,19.427 0,10.737 8.279,19.438 19.823,19.438 11.543,0 19.834,-8.701 19.834,-19.438 0,-10.72 -8.291,-19.427 -19.834,-19.427 M 70.561,113.251 H 61.089 V 75.719 h 9.472">
+                    </path>
+                    <path id="path12"
+                        d="m 48.07,76.399 c -0.89,-0.264 -4.18,-1.345 -8.636,-1.345 -11.526,0 -19.987,8.218 -19.987,19.427 0,12.093 9.34,19.438 19.987,19.438 4.23,0 7.459,-1.002 8.636,-1.336 v -10.075 c -0.407,0.226 -3.503,1.992 -7.957,1.992 -6.31,0 -10.38,-4.441 -10.38,-10.019 0,-5.748 4.246,-10.011 10.38,-10.011 4.53,0 7.576,1.805 7.957,2.004">
+                    </path>
+                    <use id="use14" xlink:href="#path12" transform="translate(98.86)"></use>
+                    <g id="g22">
+                        <path id="path16"
+                            d="m 61.061,4.759 c 0,-2.587 -2.113,-4.685 -4.703,-4.685 -2.589,0 -4.702,2.098 -4.702,4.685 v 49.84 c 0,2.602 2.113,4.699 4.702,4.699 2.59,0 4.703,-2.097 4.703,-4.699 z M 35.232,22.451 c 0,-2.586 -2.112,-4.687 -4.702,-4.687 -2.59,0 -4.702,2.101 -4.702,4.687 v 22.785 c 0,2.601 2.112,4.699 4.702,4.699 2.59,0 4.702,-2.098 4.702,-4.699 z M 9.404,35.383 C 9.404,32.796 7.292,30.699 4.702,30.699 2.115,30.699 0,32.796 0,35.383 v 9.853 c 0,2.601 2.115,4.699 4.702,4.699 2.59,0 4.702,-2.098 4.702,-4.699">
+                        </path>
+                        <use id="use18" xlink:href="#path16" transform="matrix(-1,0,0,1,112.717,0)"></use>
+                    </g>
+                    <use id="use20" xlink:href="#g22" transform="matrix(-1,0,0,1,216,0)"></use>
+                </svg>
+                <!-- FIN CISCO-->
+                <!-- ESXI-->
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="80" height="80">
+                    <path fill="#9e9e9e"
+                        d="M41.415,14c-3.592,0-5.842,2.5-5.842,2.5c-1.196-1.559-2.844-2.496-5.633-2.496c-2.944,0-4.896,2.496-4.896,2.496C23.847,14.94,21.687,14,20,14c-2.609,0-4.681,1.154-5.945,4.06L9.82,27.322L5.03,15.558c-0.603-1.33-2.095-1.933-3.487-1.311c-1.394,0.623-1.907,2.178-1.278,3.509l5.847,13.19C7.033,32.95,8.002,34,9.821,34c1.943,0,2.79-1.143,3.709-3.053c0,0,3.982-8.883,4.47-9.947s1.299-2,2.5-2c1.375,0,2.5,1.125,2.5,2.5v9.876C23,32.819,24.087,34,25.522,34C26.957,34,28,32.819,28,31.376V21.5c0-1.375,1.125-2.5,2.5-2.5s2.5,1.125,2.5,2.5v10c0,1.375,1.125,2.5,2.5,2.5s2.5-1.125,2.5-2.5v-10c0-1.375,1.125-2.5,2.5-2.5s2.5,1.125,2.5,2.5v10c0,1.375,1.125,2.5,2.5,2.5s2.5-1.125,2.5-2.5v-0.564V21.5v-1.143C48,16.619,45.011,14,41.415,14z">
+                    </path>
+                </svg>
+                <!-- FIN ESXI-->
+                <!-- FORTINET-->
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#"
+                    xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                    width="80" height="80" version="1.1" viewbox="17 -6 30 30">
+                    <path
+                        d="m43.28 17.77c1.38-0.4688 2.454-2.058 2.712-4.056v-0.5775h-7.075v4.634h4.362zm2.713-13.13v-0.5225c-0.2712-2.085-1.425-3.728-2.896-4.114h-4.179v4.636h7.075zm-24.9 8.497v0.5725c0.2562 2 1.33 3.592 2.714 4.061h4.34v-4.634h-7.054zm2.895-13.13c-1.469 0.3862-2.626 2.03-2.895 4.118v0.5188h7.054v-4.636h-4.159zm22.01 6.566h-7.075v4.636h7.075v-4.636zm-15.92 11.2h6.921v-4.634h-6.921v4.634zm6.921-17.77h-6.921v4.636h6.921v-4.636zm-15.9 11.2h7.054v-4.636h-7.054v4.636z"
+                        style="fill: #ee2e24"></path>
+                </svg>
+                <!-- FIN FORTINET-->
+            </div>
+        </div>
+        <div class="columns is-centered is-vcentered" style="margin-top: 10vh">
+            <div class="column is-size-3 is-7 centercontent">
+                BUREAUTIQUE
+                <ul>
+                    <li class="is-size-6 mt-4">Suite Office</li>
+                    <li class="is-size-6">Adobe Photoshop, Premiere Pro</li>
+                </ul>
+            </div>
+            <div class="column">
+                <!-- WORD-->
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="80" height="80">
+                    <path fill="#2d92d4"
+                        d="M42.256,6H15.744C14.781,6,14,6.781,14,7.744v7.259h30V7.744C44,6.781,43.219,6,42.256,6z">
+                    </path>
+                    <path fill="#2150a9"
+                        d="M14,33.054v7.202C14,41.219,14.781,42,15.743,42h26.513C43.219,42,44,41.219,44,40.256v-7.202H14z">
+                    </path>
+                    <path fill="#2d83d4" d="M14 15.003H44V24.005000000000003H14z"></path>
+                    <path fill="#2e70c9" d="M14 24.005H44V33.055H14z"></path>
+                    <path fill="#00488d"
+                        d="M22.319,34H5.681C4.753,34,4,33.247,4,32.319V15.681C4,14.753,4.753,14,5.681,14h16.638 C23.247,14,24,14.753,24,15.681v16.638C24,33.247,23.247,34,22.319,34z">
+                    </path>
+                    <path fill="#fff"
+                        d="M18.403 19L16.857 26.264 15.144 19 12.957 19 11.19 26.489 9.597 19 7.641 19 9.985 29 12.337 29 14.05 21.311 15.764 29 18.015 29 20.359 19z">
+                    </path>
+                </svg>
+                <!-- FIN WORD-->
+                <!-- EXCEL-->
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="80" height="80">
+                    <path fill="#169154" d="M29,6H15.744C14.781,6,14,6.781,14,7.744v7.259h15V6z"></path>
+                    <path fill="#18482a" d="M14,33.054v7.202C14,41.219,14.781,42,15.743,42H29v-8.946H14z"></path>
+                    <path fill="#0c8045" d="M14 15.003H29V24.005000000000003H14z"></path>
+                    <path fill="#17472a" d="M14 24.005H29V33.055H14z"></path>
+                    <g>
+                        <path fill="#29c27f" d="M42.256,6H29v9.003h15V7.744C44,6.781,43.219,6,42.256,6z"></path>
+                        <path fill="#27663f" d="M29,33.054V42h13.257C43.219,42,44,41.219,44,40.257v-7.202H29z"></path>
+                        <path fill="#19ac65" d="M29 15.003H44V24.005000000000003H29z"></path>
+                        <path fill="#129652" d="M29 24.005H44V33.055H29z"></path>
+                    </g>
+                    <path fill="#0c7238"
+                        d="M22.319,34H5.681C4.753,34,4,33.247,4,32.319V15.681C4,14.753,4.753,14,5.681,14h16.638 C23.247,14,24,14.753,24,15.681v16.638C24,33.247,23.247,34,22.319,34z">
+                    </path>
+                    <path fill="#fff"
+                        d="M9.807 19L12.193 19 14.129 22.754 16.175 19 18.404 19 15.333 24 18.474 29 16.123 29 14.013 25.07 11.912 29 9.526 29 12.719 23.982z">
+                    </path>
+                </svg>
+                <!-- FIN EXCEL-->
+                <!-- POWERPOINT-->
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="80" height="80">
+                    <path fill="#dc4c2c" d="M8,24c0,9.941,8.059,18,18,18s18-8.059,18-18H26H8z"></path>
+                    <path fill="#f7a278" d="M26,6v18h18C44,14.059,35.941,6,26,6z"></path>
+                    <path fill="#c06346" d="M26,6C16.059,6,8,14.059,8,24h18V6z"></path>
+                    <path fill="#9b341f"
+                        d="M22.319,34H5.681C4.753,34,4,33.247,4,32.319V15.681C4,14.753,4.753,14,5.681,14h16.638 C23.247,14,24,14.753,24,15.681v16.638C24,33.247,23.247,34,22.319,34z">
+                    </path>
+                    <path fill="#fff"
+                        d="M14.673,19.012H10v10h2.024v-3.521H14.3c1.876,0,3.397-1.521,3.397-3.397v-0.058 C17.697,20.366,16.343,19.012,14.673,19.012z M15.57,22.358c0,0.859-0.697,1.556-1.556,1.556h-1.99v-3.325h1.99 c0.859,0,1.556,0.697,1.556,1.556V22.358z">
+                    </path>
+                </svg>
+                <!-- FIN POWERPOINT-->
+                <!-- PHOTOSHOP-->
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewbox="0 0 48 48">
+                    <path fill="#03A9F4"
+                        d="M6,10c0-2.209,1.791-4,4-4h28c2.209,0,4,1.791,4,4v28c0,2.209-1.791,4-4,4H10c-2.209,0-4-1.791-4-4V10z">
+                    </path>
+                    <path fill="#020F16"
+                        d="M20.016,19.174h-2.002v4.434h1.973c0.547,0,0.97-0.179,1.27-0.537s0.449-0.879,0.449-1.563c0-0.71-0.153-1.274-0.459-1.694S20.53,19.181,20.016,19.174z">
+                    </path>
+                    <path fill="#020F16"
+                        d="M9,9v30h30V9H9z M23.365,24.789C22.539,25.597,21.393,26,19.928,26h-1.914v5h-2.871V16.781h4.844c1.406,0,2.528,0.437,3.364,1.309s1.255,2.005,1.255,3.398S24.192,23.981,23.365,24.789z M32.682,30.336c-0.709,0.573-1.641,0.859-2.793,0.859c-0.775,0-1.459-0.151-2.051-0.454s-1.057-0.725-1.392-1.265s-0.503-1.123-0.503-1.748h2.627c0.014,0.481,0.125,0.843,0.337,1.084s0.558,0.361,1.04,0.361c0.742,0,1.113-0.335,1.113-1.006c0-0.234-0.112-0.451-0.337-0.649S30,27.052,29.225,26.713c-1.139-0.462-1.922-0.94-2.349-1.436s-0.64-1.11-0.64-1.846c0-0.925,0.334-1.688,1.001-2.29s1.552-0.903,2.651-0.903c1.158,0,2.086,0.3,2.783,0.898s1.045,1.403,1.045,2.412h-2.764c0-0.859-0.357-1.289-1.074-1.289c-0.293,0-0.533,0.091-0.723,0.273s-0.283,0.437-0.283,0.762c0,0.234,0.104,0.441,0.313,0.62s0.699,0.435,1.475,0.767c1.127,0.417,1.922,0.881,2.388,1.392s0.698,1.174,0.698,1.987C33.746,29.005,33.391,29.763,32.682,30.336z">
+                    </path>
+                </svg>
+                <!-- FIN PHOTOSHOP-->
+                <!-- PREMIERE PRO-->
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="80" height="80">
+                    <path fill="#e040fb"
+                        d="M6,10c0-2.209,1.791-4,4-4h28c2.209,0,4,1.791,4,4v28c0,2.209-1.791,4-4,4H10c-2.209,0-4-1.791-4-4 V10z">
+                    </path>
+                    <path fill="#020f16"
+                        d="M9,9v30h30V9H9z M21.016,19.174h-2.002v4.434h1.973c0.547,0,0.97-0.179,1.27-0.537 s0.449-0.879,0.449-1.563c0-0.71-0.153-1.274-0.459-1.694S21.53,19.181,21.016,19.174z M24.365,24.789 C23.539,25.597,22.393,26,20.928,26h-1.914v5H16V16.781h4.987c1.406,0,2.528,0.437,3.364,1.309s1.255,2.005,1.255,3.398 S25.192,23.981,24.365,24.789z M33.2,23.1L32.3,23c-0.8,0-1.3,0.3-1.5,1v7H28V20.4h2.6l0.1,1.1c0.4-0.9,1-1.3,1.8-1.3 c0.3,0,0.6,0,0.8,0.1L33.2,23.1z">
+                    </path>
+                </svg>
+                <!-- FIN PREMIERE PRO-->
+            </div>
+        </div>
+        <div id="gotoQualif" class="mb-6">⠀</div>
+        <h1 class="title is-1 has-text-centered" style="margin-top: 10vh; margin-bottom: 10vh">QUALIFICATIONS</h1>
+        <div class="columns is-centered is-vcentered">
+            <div class="column is-half centercontent">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                    baseProfile="tiny" width="200px" id="YNOV_CAMPUS" x="0px" y="0px" viewBox="0 0 140.3 70.3"
+                    xml:space="preserve">
+                    <g>
+                        <path
+                            d="M45.4,57.1c-2.2,0-3.9-1.8-3.9-4.1c0-2.3,1.7-4,3.9-4c1.1,0,2.3,0.6,3.1,1.5l1.1-1.4c-1.1-1.1-2.6-1.8-4.2-1.8   c-3.3,0-5.8,2.5-5.8,5.8c0,3.3,2.5,5.8,5.7,5.8c1.6,0,3.2-0.7,4.3-1.9l-1.1-1.3C47.7,56.6,46.5,57.1,45.4,57.1z" />
+                        <path
+                            d="M56.8,47.4L52,58.9h1.9l1.1-2.6h5.6l1.1,2.6h2l-4.8-11.5H56.8z M55.6,54.5l2.1-5.1l2.1,5.1H55.6z" />
+                        <polygon
+                            points="72.9,55 69.2,47.4 67,47.4 67,58.9 68.8,58.9 68.8,50.3 72.2,57.7 73.5,57.7 76.9,50.3 76.9,58.9 78.7,58.9    78.7,47.4 76.5,47.4  " />
+                        <path
+                            d="M88,47.4h-4.4v11.5h1.9v-3.5H88c2.8,0,4.4-1.5,4.4-4.1C92.3,48.8,90.7,47.4,88,47.4z M87.9,53.7h-2.5v-4.5h2.5   c1.7,0,2.7,0.7,2.7,2.2C90.5,52.9,89.6,53.7,87.9,53.7z" />
+                        <path
+                            d="M103.7,54.1c0,2-1.1,3.1-2.9,3.1c-1.8,0-3-1.2-3-3.1v-6.7h-1.9v6.7c0,3,1.8,4.8,4.8,4.8c3,0,4.8-1.8,4.8-4.8v-6.7h-1.9   V54.1z" />
+                        <path
+                            d="M111.9,50.3c0-0.8,0.7-1.2,1.8-1.2c0.8,0,2,0.3,3.2,1.1l0.8-1.7c-1-0.7-2.4-1.2-3.9-1.2c-2.4,0-4,1.2-4,3.2   c0,4.1,6,2.7,6,5.2c0,0.9-0.8,1.4-2.1,1.4c-1.2,0-2.6-0.6-3.7-1.7l-0.8,1.7c1.1,1.1,2.8,1.8,4.5,1.8c2.4,0,4.2-1.3,4.2-3.3   C117.8,51.5,111.9,52.8,111.9,50.3z" />
+                        <path
+                            d="M86.1,40.2c8,0,14.5-6.4,14.5-14.4s-6.5-14.4-14.5-14.4c-8,0-14.5,6.4-14.5,14.4S78.1,40.2,86.1,40.2z M86.1,18.2   c4.2,0,7.6,3.4,7.6,7.5c0,4.2-3.4,7.5-7.6,7.5c-4.2,0-7.6-3.4-7.6-7.5C78.5,21.6,81.9,18.2,86.1,18.2z" />
+                        <path
+                            d="M39.7,40.2h6.9l0-14c0-4.3,3.4-7.7,7.6-7.7c4.2,0,7.6,3.4,7.6,7.7v14h6.9l0-14c0-8.1-6.5-14.7-14.5-14.7   c-8,0-14.5,6.6-14.5,14.7V40.2z" />
+                        <path d="M24.1,26.4c0-1-0.2-1.9-0.5-2.7l-4.7-12.2h-7.4L19.7,33C22.3,32,24.1,29.4,24.1,26.4z" />
+                        <polygon points="117.8,40.2 128.8,11.5 121.4,11.5 110.4,40.2  " />
+                        <path d="M112,26.4c0-1-0.2-1.9-0.5-2.7l-4.7-12.2h-7.4l8.3,21.5C110.2,32,112,29.4,112,26.4z" />
+                        <polygon points="33.5,11.5 15.3,58.9 22.7,58.9 40.9,11.5  " />
+                    </g>
+                </svg>
+            </div>
+            <div class="column specialcontent">
+                <h1 class="title is-3">Campus Ynov Bordeaux</h1>
+                <p class="subtitle is-5">2019 - Présent</p>
+                <h2 class="subtitle is-5">3ème année de bachelor informatique, spécialité Infrastructure et SI</h2>
+            </div>
+        </div>
+        <div class="columns is-centered is-vcentered mt-6">
+            <div class="column is-half centercontent">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                    id="Layer_1" x="0px" y="0px" width="200px" viewBox="0 0 330 184" enable-background="new 0 0 330 184"
+                    xml:space="preserve">
+                    <image id="image0" width="330" height="184" x="0" y="0"
+                        href="data:image/png;base64,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" />
+                </svg>
+            </div>
+            <div class="column specialcontent">
+                <h1 class="title is-3">Lycée Alfred Kastler</h1>
+                <p class="subtitle is-5">2018 - 2019</p>
+                <h2 class="subtitle is-5">
+                    Diplôme du baccalauréat en filière technologique STI2D, spécialité Système d'Information et
+                    Numérique
+                </h2>
+            </div>
+        </div>
+        <div id="gotoExp" class="mb-6">⠀</div>
+        <h1 class="title is-1 has-text-centered" style="margin-top: 10vh; margin-bottom: 10vh">EXPÉRIENCE</h1>
+        <div class="columns centercontent">
+            <div class="column is-half">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                    baseProfile="tiny" width="200px" id="YNOV_CAMPUS" x="0px" y="0px" viewBox="0 0 140.3 70.3"
+                    xml:space="preserve">
+                    <g>
+                        <path
+                            d="M45.4,57.1c-2.2,0-3.9-1.8-3.9-4.1c0-2.3,1.7-4,3.9-4c1.1,0,2.3,0.6,3.1,1.5l1.1-1.4c-1.1-1.1-2.6-1.8-4.2-1.8   c-3.3,0-5.8,2.5-5.8,5.8c0,3.3,2.5,5.8,5.7,5.8c1.6,0,3.2-0.7,4.3-1.9l-1.1-1.3C47.7,56.6,46.5,57.1,45.4,57.1z" />
+                        <path
+                            d="M56.8,47.4L52,58.9h1.9l1.1-2.6h5.6l1.1,2.6h2l-4.8-11.5H56.8z M55.6,54.5l2.1-5.1l2.1,5.1H55.6z" />
+                        <polygon
+                            points="72.9,55 69.2,47.4 67,47.4 67,58.9 68.8,58.9 68.8,50.3 72.2,57.7 73.5,57.7 76.9,50.3 76.9,58.9 78.7,58.9    78.7,47.4 76.5,47.4  " />
+                        <path
+                            d="M88,47.4h-4.4v11.5h1.9v-3.5H88c2.8,0,4.4-1.5,4.4-4.1C92.3,48.8,90.7,47.4,88,47.4z M87.9,53.7h-2.5v-4.5h2.5   c1.7,0,2.7,0.7,2.7,2.2C90.5,52.9,89.6,53.7,87.9,53.7z" />
+                        <path
+                            d="M103.7,54.1c0,2-1.1,3.1-2.9,3.1c-1.8,0-3-1.2-3-3.1v-6.7h-1.9v6.7c0,3,1.8,4.8,4.8,4.8c3,0,4.8-1.8,4.8-4.8v-6.7h-1.9   V54.1z" />
+                        <path
+                            d="M111.9,50.3c0-0.8,0.7-1.2,1.8-1.2c0.8,0,2,0.3,3.2,1.1l0.8-1.7c-1-0.7-2.4-1.2-3.9-1.2c-2.4,0-4,1.2-4,3.2   c0,4.1,6,2.7,6,5.2c0,0.9-0.8,1.4-2.1,1.4c-1.2,0-2.6-0.6-3.7-1.7l-0.8,1.7c1.1,1.1,2.8,1.8,4.5,1.8c2.4,0,4.2-1.3,4.2-3.3   C117.8,51.5,111.9,52.8,111.9,50.3z" />
+                        <path
+                            d="M86.1,40.2c8,0,14.5-6.4,14.5-14.4s-6.5-14.4-14.5-14.4c-8,0-14.5,6.4-14.5,14.4S78.1,40.2,86.1,40.2z M86.1,18.2   c4.2,0,7.6,3.4,7.6,7.5c0,4.2-3.4,7.5-7.6,7.5c-4.2,0-7.6-3.4-7.6-7.5C78.5,21.6,81.9,18.2,86.1,18.2z" />
+                        <path
+                            d="M39.7,40.2h6.9l0-14c0-4.3,3.4-7.7,7.6-7.7c4.2,0,7.6,3.4,7.6,7.7v14h6.9l0-14c0-8.1-6.5-14.7-14.5-14.7   c-8,0-14.5,6.6-14.5,14.7V40.2z" />
+                        <path d="M24.1,26.4c0-1-0.2-1.9-0.5-2.7l-4.7-12.2h-7.4L19.7,33C22.3,32,24.1,29.4,24.1,26.4z" />
+                        <polygon points="117.8,40.2 128.8,11.5 121.4,11.5 110.4,40.2  " />
+                        <path d="M112,26.4c0-1-0.2-1.9-0.5-2.7l-4.7-12.2h-7.4l8.3,21.5C110.2,32,112,29.4,112,26.4z" />
+                        <polygon points="33.5,11.5 15.3,58.9 22.7,58.9 40.9,11.5  " />
+                    </g>
+                </svg>
+            </div>
+            <div class="column specialcontent">
+                <h1 class="title is-3">Campus Ynov Bordeaux</h1>
+                <p class="subtitle is-5">2019 - Présent</p>
+                <h2 class="subtitle is-5">
+                    Mentor dans la filière informatique au campus Ynov Bordeaux, en charge du suivi et de
+                    l'accompagnement des
+                    futurs étudiants dans le campus
+                </h2>
+            </div>
+        </div>
+        <div class="columns mt-6 centercontent">
+            <div class="column is-half">
+                <img src="../assets/charles.png" width="150px" alt="" />
+            </div>
+            <div class="column specialcontent">
+                <h1 class="title is-3">SIH Hôpital Charles Perrens</h1>
+                <p class="subtitle is-5">2020</p>
+                <h2 class="subtitle is-5">
+                    Stage au sein du Système d'Information Hospitalier, en charge de l'assistance au personnel
+                    hospitalier et
+                    la maintenance du matériel
+                </h2>
+            </div>
+        </div>
+        <div class="columns mt-6 centercontent">
+            <div class="column is-half">
+                <img src="../assets/skimevo.png" width="250px" alt="" />
+            </div>
+            <div class="column specialcontent">
+                <h1 class="title is-3">Association Skim'Evolution</h1>
+                <p class="subtitle is-5">2019</p>
+                <h2 class="subtitle is-5">
+                    Moniteur au sein de l'association Skim'Evolution, avec pour objectif d'apprendre aux volontaires les
+                    bases
+                    du skimboarding, et en charge de l'installation des structures d'apprentissage
+                </h2>
+            </div>
+        </div>
+        <div class="columns mt-6 centercontent">
+            <div class="column is-half">
+                <svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="200px">
+                    <defs id="defs6154">
+                        <clipPath id="clipPath46">
+                            <path
+                                d="M 3064.63,408.281 C 2860.11,544.48 2525.61,540.656 2464.93,536.68 l 0,-312.149 540.97,0 58.73,183.75"
+                                id="path48" />
+                        </clipPath>
+                        <clipPath id="clipPath52">
+                            <path d="m 2464.93,537.43 0,-312.899 599.7,0 0,312.899 -599.7,0" id="path54" />
+                        </clipPath>
+                        <clipPath id="clipPath58">
+                            <path d="m 2464.03,223.707 602.04,0 0,315.098 -602.04,0 0,-315.098 z" id="path60" />
+                        </clipPath>
+                        <clipPath id="clipPath64">
+                            <path d="m 2464.03,538.805 0,-315.098 602.04,0 0,315.098 -602.04,0 z" id="path66" />
+                        </clipPath>
+                        <clipPath id="clipPath52-4">
+                            <path d="m 2464.93,537.43 0,-312.899 599.7,0 0,312.899 -599.7,0" id="path54-6" />
+                        </clipPath>
+                        <clipPath id="clipPath58-2">
+                            <path d="m 2464.03,223.707 602.04,0 0,315.098 -602.04,0 0,-315.098 z" id="path60-8" />
+                        </clipPath>
+                        <clipPath id="clipPath64-9">
+                            <path d="m 2464.03,538.805 0,-315.098 602.04,0 0,315.098 -602.04,0 z" id="path66-6" />
+                        </clipPath>
+                        <clipPath id="clipPath6339">
+                            <path
+                                d="m 356.40607,193.98139 c -30.678,-20.42985 -80.853,-19.85625 -89.955,-19.25985 l 0,46.82235 81.1455,0 8.8095,-27.5625"
+                                id="path6341" />
+                        </clipPath>
+                    </defs>
+                    <g transform="translate(-236.98071,-174.52236)" id="layer1">
+                        <image
+                            xlink:href="data:image/png;base64,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"
+                            x="266.29657" y="174.35854" width="90.480003" height="47.43"
+                            transform="matrix(1.3276122,0,0,1.3276122,-116.76298,-57.17566)"
+                            clip-path="url(#clipPath6339)" id="image70" />
+                        <path
+                            d="m 323.09163,201.21749 -5.43856,23.66841 c -0.94792,0.13283 -2.5769,0.12904 -4.11029,0.001 -5.57995,-0.46122 -13.55957,-4.28295 -11.29532,-11.26944 1.69868,-5.21951 7.89995,-8.38726 15.44145,-8.97293 1.32629,-0.0786 2.38971,-3.51386 2.38971,-3.51386 -0.0279,0 -0.40028,-0.0426 -1.03156,-0.0192 -10.78353,0.35626 -17.97056,3.70344 -21.76023,9.84418 l -0.67907,0 2.03523,-9.73844 -5.61381,0 -3.79564,18.25812 c -2.43949,-8.6557 -7.36228,-16.09862 -18.68548,-18.00381 -2.49326,-0.4184 -3.65824,-0.53828 -6.55575,-0.51956 -8.27036,0.0645 -15.70632,2.40284 -16.96688,7.20256 -2.12883,8.10647 16.78168,6.93969 16.43716,12.33345 -0.2071,3.27588 -5.88265,5.10779 -10.44499,5.06816 -3.39138,-0.0382 -7.89199,-1.03394 -9.93319,-1.58537 l -1.68076,3.57679 c 3.22212,0.76769 6.61151,1.34719 9.86151,1.37686 13.51774,0.12984 18.78106,-4.51175 19.38048,-8.86798 1.06541,-7.98061 -17.88493,-7.2159 -16.46704,-12.21536 0.80653,-3.1319 6.80866,-3.6897 10.26775,-3.6662 1.49954,0.009 2.78202,0.12294 3.96293,0.3469 0.47993,0.14239 0.95986,-0.2077 1.42984,-1.00128 l -1.5553,7.49271 c -0.29872,1.42605 0.1394,2.52133 1.82414,4.27856 1.14108,1.18629 2.19454,2.33355 2.42554,1.22433 0.70497,-3.44834 1.43383,-6.94806 2.14675,-10.3747 8.76822,10.10645 13.06968,22.52075 13.06968,22.52075 l 5.15977,0 2.19454,-10.50931 0.0777,0.43174 c 1.07935,5.74624 8.85783,10.09311 18.74523,10.34681 3.35554,0.0832 5.81693,-0.095 7.11932,-0.66194 1.30438,-0.56796 2.08103,-1.21517 2.50122,-3.04707 0.32659,-1.41889 1.85799,-8.08397 1.85799,-8.08397 l 13.00595,0 c 0.79856,0 1.4856,-0.50721 2.77007,-4.26123 l -14.79823,0 1.79825,-7.82488 17.1262,0 c 0.53768,0 1.31831,0.0232 2.63862,-3.83508 l -24.85489,0"
+                            id="path72" style="fill: #706d6e; fill-opacity: 1; fill-rule: nonzero; stroke: none" />
+                        <path
+                            d="m 324.14509,200.36337 -5.43856,23.66602 c -1.5314,0.13462 -3.07276,0.13143 -4.60615,0 -5.58195,-0.45982 -13.50779,-4.40143 -11.24355,-11.38613 1.70067,-5.22051 7.89996,-8.38507 15.44544,-8.97453 1.3223,-0.0779 2.38771,-3.51306 2.38771,-3.51306 -0.0259,0 -0.40027,-0.0396 -1.03354,-0.0216 -10.78353,0.36164 -18.39075,3.28584 -22.18241,9.42419 -0.10157,0.15632 -0.19118,0.31424 -0.28278,0.47296 l 2.00735,-9.66774 -5.18566,0 -3.96491,19.06783 c -3.26394,-8.6549 -7.62116,-16.90913 -18.94237,-18.81572 -2.49326,-0.41859 -3.66023,-0.53768 -6.55575,-0.51816 -8.27036,0.0653 -15.70831,2.40145 -16.96888,7.20097 -2.12882,8.10646 16.78168,6.93969 16.43916,12.32966 -0.21109,3.28126 -5.88464,5.11476 -10.443,5.07354 -3.39337,-0.0397 -7.15715,-0.85651 -9.26009,-1.41351 l -1.68076,3.57599 c 2.88756,0.60918 5.93642,1.17315 9.18641,1.20501 13.51775,0.13223 18.78107,-4.50957 19.38049,-8.87197 1.06541,-7.97583 -17.88493,-7.21033 -16.46704,-12.21217 0.80652,-3.13489 6.80667,-3.6895 10.26576,-3.6662 1.50153,0.0106 2.78599,0.12293 3.96491,0.3469 0.63128,0.18739 1.26655,-0.47993 1.88389,-1.89663 0.0299,-0.0831 0.20113,-0.13601 0.20113,0.0367 0,0 -1.40793,6.77699 -1.83211,8.81521 -0.29672,1.42346 -0.24295,2.05912 1.44577,3.81476 1.1371,1.18708 2.19455,2.33374 2.42555,1.22671 0.70496,-3.44993 1.43382,-6.95045 2.14277,-10.37549 8.7702,10.10486 13.07167,22.51996 13.07167,22.51996 l 5.18963,0 2.17662,-10.46032 0.0677,0.38354 c 1.07537,5.74704 8.85783,10.09331 18.74522,10.34522 3.35554,0.0848 5.81494,-0.0943 7.12131,-0.66035 1.3004,-0.56796 2.07905,-1.21676 2.49525,-3.04707 0.33058,-1.42048 1.85999,-8.08636 1.85999,-8.08636 l 13.00794,0 c 0.79856,0 1.48361,-0.50621 2.77405,-4.26044 l -14.80421,0 1.79626,-7.82089 17.1262,0 c 0.54167,0 1.32031,0.0202 2.64261,-3.83667 l -24.35903,0"
+                            id="path74" style="fill: #ffffff; fill-opacity: 1; fill-rule: nonzero; stroke: none" />
+                        <path
+                            d="m 253.82214,207.98374 c -1.99939,5.66837 15.86364,3.92448 16.16832,12.37168 2.49923,-8.23332 -16.1962,-7.67174 -16.16832,-12.37168 m 22.34371,-5.03152 c -0.008,0.59742 8.33807,2.61832 13.04777,20.49129 l 0.52574,-2.53049 c -4.15012,-11.54863 -8.6089,-15.6629 -13.57351,-17.9608 m 69.89679,-0.9296 c 0.27482,0.007 0.49587,-0.69699 0.54366,-0.83938 l -20.57733,0 -0.0398,0.17744 c 0,0 15.02326,0.73344 20.07349,0.66194 m -27.58911,23.02578 c -1.88786,0.11975 -3.91313,0.12294 -5.46843,-0.0366 -6.76684,-0.70556 -11.87483,-4.96361 -11.51438,-9.70259 l -0.0518,0 c -1.36014,5.59389 5.54013,11.7641 16.79761,10.77616 l 0.23698,-1.03693"
+                            id="path82" style="fill: #ddd2d8; fill-opacity: 1; fill-rule: nonzero; stroke: none" />
+                    </g>
+                </svg>
+            </div>
+            <div class="column specialcontent">
+                <h1 class="title is-3">SNCF - Gare de Bordeaux Saint-Jean</h1>
+                <p class="subtitle is-5">2015</p>
+                <h2 class="subtitle is-5">Stage d'observation dans l'UP Informatique de la gare de Bordeaux Saint-Jean
+                </h2>
+            </div>
+            <div id="gotoProj" class="mb-6">⠀</div>
+            <h1 class="title is-1 has-text-centered" style="margin-top: 10vh; margin-bottom: 10vh">PROJETS</h1>
+        </div>
+        <!-- SCRIPTS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="../style/style.js"></script>
+        <!-- -->
+    </div>
+</body>
+
 </html>

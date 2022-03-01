@@ -7,149 +7,154 @@
 
 /* MAIN CLASSES */
 h1 {
-    font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 h2 {
-    font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 p {
-    font-family: "Titillium Web", sans-serif;
+  font-family: "Titillium Web", sans-serif;
+}
+
+/* Debug mode */
+
+.debug {
+  border: 2px solid red;
 }
 
 /* NO TEXT DECORATION */
 a,
 a:focus,
 a:active {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 /*  */
 
 /* PADDING FOR MOBILE */
 
 @media only screen and (max-width: 1023px) {
-    .container {
-        padding-left: 1em;
-        padding-right: 1em;
-    }
+  .container {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 
-    .centercontent {
-        text-align: center;
-    }
+  .centercontent {
+    text-align: center;
+  }
 
-    .specialcontent {
-        text-align: center;
-    }
+  .specialcontent {
+    text-align: center;
+  }
 }
 
 @media only screen and (min-width: 1023px) {
-    html {
-        scroll-behavior: smooth;
-        overflow-y: scroll;
-    }
+  html {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+  }
 
-    .specialcontent {
-        text-align: right;
-    }
+  .specialcontent {
+    text-align: right;
+  }
 }
 /*  */
 
 /* BURGER LEFT */
 .navbar-brand.left-burger {
-    align-items: flex-start;
+  align-items: flex-start;
 }
 
 .navbar-brand.left-burger .navbar-burger {
-    margin-left: 0;
-    margin-right: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 /*  */
 
 /* ANIMATIONS */
 @keyframes slide-up {
-    0% {
-        opacity: 0;
-        transform: translateY(65vh);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(65vh);
+  }
 
-    100% {
-        opacity: 1;
-        transform: translateY(0vh);
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0vh);
+  }
 }
 
 .slide-up {
-    animation: slide-up 2s;
+  animation: slide-up 2s;
 }
 
 .navbar-item {
-    color: white;
-    mix-blend-mode: difference;
+  color: white;
+  mix-blend-mode: difference;
 }
 /*  */
 
 /* NAVBAR */
 .navbar {
-    background-color: transparent;
-    font-family: "Montserrat", sans-serif;
-    font-size: 2vh;
+  background-color: transparent;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2vh;
 }
 
 .navbar-brand {
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 }
 /*  */
 
 .parallax {
-    background-image: url("../assets/background.png");
-    height: 100vh;
+  background-image: url("../assets/background.png");
+  height: 100vh;
 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* PERSONAL CLASSES */
 .bigName {
-    background-color: transparent;
-    font-family: "Prompt", sans-serif;
-    font-size: 8vw;
-    padding-top: 600px;
-    color: #ffbe0b;
+  background-color: transparent;
+  font-family: "Prompt", sans-serif;
+  font-size: 8vw;
+  padding-top: 400px;
+  color: #ffbe0b;
 }
 
 .bioLeftText {
-    font-size: xx-large;
+  font-size: xx-large;
 }
 
-#profilePic {
-    border-radius: 50%;
-    object-fit: cover;
-    height: 35vh;
-    width: 35vh;
-    margin-left: auto;
-    margin-right: auto;
+.hobbyIcon {
+  /* padding-bottom: 5em; */
+  height: 20vh;
+  width: 20vh;
 }
 
 #arrow {
-    width: 150px;
+  width: 150px;
 }
 
 .profileIcon {
-    padding-bottom: 2em;
-    margin-left: 1em;
+  height: 15vh;
+  width: auto;
+  padding-bottom: 2em;
+  margin-left: 1em;
 }
 
 .profilePicText {
-    font-family: "Comfortaa";
+  font-family: "Comfortaa";
 }
 
 /* CARD SHADOW */
 .has-shadow {
-    /* offset-x | offset-y | blur-radius | spread-radius | color */
-    box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.199);
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.199);
 }
