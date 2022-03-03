@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../style/style.css" />
 </head>
-<nav class="navbar is-fixed-top is-transparent mt-4" aria-label="main navigation" style="height: 5vh">
+<nav id="navbar" class="navbar is-fixed-top is-transparent" aria-label="main navigation" style="height: 5vh">
     <div class="navbar-brand left-burger">
         <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="navMenu">
             <span class="spancolor" aria-hidden="true" style="color: white"></span>
@@ -35,7 +35,7 @@
         </a>
     </div>
     <div class="navbar-menu" id="navMenu">
-        <div class="navbar-end has-text-weight-semibold">
+        <div class="navbar-start navbar-center has-text-weight-semibold">
             <a class="navbar-item mx-5" id="bio" href="#gotoBio"> BIO </a>
             <a class="navbar-item mx-5" id="competences" href="#gotoComp"> COMPÉTENCES </a>
             <a class="navbar-item mx-5" id="qualifs" href="#gotoQualif"> QUALIFICATIONS </a>
@@ -84,10 +84,10 @@
             </p>
         </div>
 
-        <h2 class="title is-1 has-text-centered mt-6 mb-6">Mes hobbys</h2>
-        <div class="columns is-centered">
+        <h2 class="title is-1 has-text-centered mt-6 mb-6">Mes centres d'intérêt</h2>
+        <div class="columns mt-6 is-multiline is-centered">
             <div class="column is-3 has-text-centered">
-                <h3 class="subtitle is-4">L'informatique, en particulier l'infra SI</h3>
+                <h3 class="subtitle is-4">L'informatique</h3>
                 <img class="hobbyIcon" src="assets/svg/laptop.svg" alt="Laptop icon" />
             </div>
             <div class="column is-3 has-text-centered">
@@ -95,15 +95,13 @@
                 <img class="hobbyIcon" src="assets/svg/blockchain-technology.svg" alt="New technologies icon" />
             </div>
             <div class="column is-3 has-text-centered">
-                <h3 class="subtitle is-4">Le basketball, que j'ai pratiqué 2 ans en club</h3>
+                <h3 class="subtitle is-4">Le basketball</h3>
                 <img class="hobbyIcon" src="assets/svg/basketball.svg" alt="Basketball icon" />
             </div>
             <div class="column is-3 has-text-centered">
                 <h3 class="subtitle is-4">Le football</h3>
                 <img class="hobbyIcon" src="assets/svg/soccer.svg" alt="Football icon" />
             </div>
-        </div>
-        <div class="columns is-centered">
             <div class="column is-3 has-text-centered">
                 <h3 class="subtitle is-4">Les jeux vidéo</h3>
                 <img class="hobbyIcon" src="assets/svg/space.svg" alt="Space invaders icon" />
@@ -111,6 +109,14 @@
             <div class="column is-3 has-text-centered">
                 <h3 class="subtitle is-4">Le montage vidéo</h3>
                 <img class="hobbyIcon" src="assets/svg/online-video.svg" alt="Video editing icon" />
+            </div>
+            <div class="column is-3 has-text-centered">
+                <h3 class="subtitle is-4">Le cyclisme</h3>
+                <img class="hobbyIcon" src="assets/svg/cycle.svg" alt="Video editing icon" />
+            </div>
+            <div class="column is-3 has-text-centered">
+                <h3 class="subtitle is-4">La musculation</h3>
+                <img class="hobbyIcon" src="assets/svg/dumbbell.svg" alt="Video editing icon" />
             </div>
         </div>
         <div id="gotoComp" class="mb-6">⠀</div>

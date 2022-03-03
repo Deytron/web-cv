@@ -102,6 +102,12 @@ a:active {
   font-size: 2vh;
 }
 
+/* Center navbar */
+.navbar-center {
+  flex-grow: 1;
+  justify-content: center;
+}
+
 .navbar-brand {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -123,7 +129,7 @@ a:active {
   background-color: transparent;
   font-family: "Prompt", sans-serif;
   font-size: 8vw;
-  padding-top: 400px;
+  padding-top: 60vh;
   color: #ffbe0b;
 }
 
@@ -133,8 +139,8 @@ a:active {
 
 .hobbyIcon {
   /* padding-bottom: 5em; */
-  height: 20vh;
-  width: 20vh;
+  height: 150px;
+  width: auto;
 }
 
 #arrow {
