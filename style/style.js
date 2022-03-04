@@ -46,6 +46,7 @@ projets.style.transition = "all 1s";
 window.addEventListener("scroll", () => {
   if (window.scrollY < 750 && x.matches) {
     // If at top
+    document.getElementById("navbar").classList.add("is-transparent");
     spancolor.forEach((item) => {
       item.style.color = "white";
     });
