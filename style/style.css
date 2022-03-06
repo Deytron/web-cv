@@ -142,7 +142,13 @@ a:active {
   width: 150px;
 }
 
+/* Icons */
 .profileIcon {
+  height: 10vh;
+  width: auto;
+}
+
+.compIcon {
   height: 10vh;
   width: auto;
 }
