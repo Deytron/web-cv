@@ -151,6 +151,7 @@ a:active {
 .compIcon {
   height: 10vh;
   width: auto;
+  margin: 0.5em;
 }
 
 .profilePicText {
