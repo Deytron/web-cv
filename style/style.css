@@ -149,8 +149,8 @@ a:active {
 }
 
 .compIcon {
-  height: 10vh;
-  width: auto;
+  max-height: 10vh;
+  width: 10vh;
   margin: 0.5em;
 }
 
