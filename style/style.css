@@ -1,3 +1,5 @@
+/** @format */
+
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
@@ -52,6 +54,10 @@ a:active {
 
   .specialcontent {
     text-align: right;
+  }
+
+  .mrC {
+    margin-right: 5vw;
   }
 }
 /*  */
@@ -156,6 +162,15 @@ a:active {
 
 .profilePicText {
   font-family: "Comfortaa";
+}
+
+.projImage {
+  object-fit: cover;
+}
+
+/* Hide scrollbar in touch */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
 }
 
 /* CARD SHADOW */
