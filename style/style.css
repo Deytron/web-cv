@@ -90,6 +90,27 @@ a:active {
   animation: slide-up 2s;
 }
 
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-30vh);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0vh);
+  }
+}
+
+.slide-up {
+  animation: slide-up 2s;
+}
+
+
+.slide-down {
+  animation: slide-down 2s;
+}
+
 .navbar-item {
   color: white;
   mix-blend-mode: difference;
@@ -130,7 +151,7 @@ a:active {
   background-color: transparent;
   font-family: "Prompt", sans-serif;
   font-size: 8vw;
-  padding-top: 60vh;
+  padding-top: 5vh;
   color: #ffbe0b;
 }
 
@@ -146,6 +167,8 @@ a:active {
 
 #arrow {
   width: 150px;
+  position: static;
+  padding-top: 55vh;
 }
 
 /* Icons */
