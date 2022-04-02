@@ -35,6 +35,7 @@ let qualifs = document.getElementById("qualifs");
 let projets = document.getElementById("projets");
 let exp = document.getElementById("exp");
 let spancolor = [...document.getElementsByClassName("spancolor")];
+let navbaritems = [...document.getElementsByClassName("navbar-item")];
 
 bio.style.transition = "all 1s";
 competences.style.transition = "all 1s";
@@ -44,6 +45,7 @@ projets.style.transition = "all 1s";
 
 // COLOR SWITCHING ON SCROLL
 window.addEventListener("scroll", () => {
+  // windowScroll
   if (window.scrollY < 750 && x.matches) {
     // If at top
     document.getElementById("navbar").classList.add("is-transparent");
@@ -73,5 +75,8 @@ window.addEventListener("scroll", () => {
     document.getElementById("navbar").classList.remove("is-transparent");
     document.getElementById("navbar").classList.add("is-white");
     document.getElementById("navbar").classList.add("has-shadow");
+    navbaritems.forEach((item) => {
+      item.style.color = "black";
+    });
   }
 });

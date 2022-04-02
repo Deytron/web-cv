@@ -111,10 +111,6 @@ a:active {
   animation: slide-down 2s;
 }
 
-.navbar-item {
-  color: white;
-  mix-blend-mode: difference;
-}
 /*  */
 
 /* NAVBAR */
