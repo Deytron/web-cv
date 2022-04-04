@@ -25,6 +25,7 @@
     <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../style/style.css" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
 </head>
 <nav id="navbar" class="navbar is-fixed-top is-transparent" aria-label="main navigation" style="height: 5vh">
     <div class="navbar-brand left-burger">
@@ -48,53 +49,61 @@
 <div id="start" class="parallax has-text-centered">
     <p class="bigName is-size-1-touch slide-down">Romain Ranaivoson</p>
     <a id="arrowClick"> <img id="arrow" src="assets/svg/arrow.svg" alt="arrow" /> </a>
+</a>
 </div>
 
 
 <body>
-    <div class="container is-fluid">
+    <div class="containerPage">
         <div id="gotoBio" class="mb-6">⠀</div>
-        <h1 class="title is-1 has-text-centered mt-6">À propos de moi</h1>
+        <h1 class="title is-1 has-text-centered mt-6 mb-6">À PROPOS DE MOI</h1>
 
-        <div class="columns mt-6 ">
-            <div class="ml-4 column  centercontent">
-                <a href="mailto: r.ranaivoson@ynov.com" target="_blank" class="title is-3 has-text-link">EMAIL
-                    <img width="18px" src="assets/svg/output.svg" target="_blank" alt="Output link icon">
-                    <h2 class="subtitle is-4 mb-6" target="_blank">r.ranaivoson@ynov.com</h2>
-                </a>
-                <!--  -->
-                <a href="https://www.linkedin.com/in/romain-ranaivoson/" target="_blank"
-                    class="title is-3 has-text-link">LINKEDIN
-                    <img width="18px" src="assets/svg/output.svg" target="_blank" alt="Output link icon">
-                    <h2 class="subtitle is-4 mb-6 target=" _blank"">Romain Ranaivoson</h2>
-                </a>
-                <!--  -->
-                <a href="https://github.com/Deytron" target="_blank" class="title is-3 has-text-link">GITHUB
-                    <img width="18px" src="assets/svg/output.svg" target="_blank" alt="Output link icon">
-                    <h2 class="subtitle is-4 mb-6" target="_blank">Deytron</h2>
-                </a>
-                <!--  -->
-                <p target="_blank" class="title is-3 has-text-link">TELEPHONE
-                <h2 class="subtitle is-4" target="_blank">06 17 10 88 48</h2>
-                </p>
-                <!--  -->
-            </div>
-            <div class="column is-7 ">
-                <p class="is-size-4-touch is-size-3-desktop mb-6">
-                    Actuellement en troisième année de bachelor et au poste de mentor au campus Ynov Bordeaux, je
-                    souhaite
-                    m'orienter en Cloud, Sécurité et Infrastructure.
-                </p>
+        <div class="column is-7 has-text-centered mx-auto mt-6 mb-6">
+            <p class="is-size-5-touch is-size-4-desktop mb-6">
+                Actuellement en troisième année de bachelor et au poste de mentor au campus Ynov Bordeaux, je
+                souhaite
+                m'orienter en Cloud, Sécurité et Infrastructure.
+            </p>
 
-                <p class="is-size-4-touch is-size-3-desktop mt-6">
-                    Je suis également développeur web à mes heures perdues, et j'aime beaucoup aider les autres dans ce
-                    domaine et dans leurs projets. Étant mentor, j'ai en main toutes les méthodes et
-                    connaissances pédagogiques pour guider une classe et mener un projet.
-                </p>
-            </div>
+            <p class="is-size-5-touch is-size-4-desktop mt-6 mb-6">
+                Je suis également développeur web à mes heures perdues, et j'aime beaucoup aider les autres dans ce
+                domaine et dans leurs projets. Étant mentor, j'ai en main toutes les méthodes et
+                connaissances pédagogiques pour guider une classe et mener un projet.
+            </p>
         </div>
 
-        <h2 class="title is-1 has-text-centered mt-6 mb-6">Mes centres d'intérêt</h2>
+        <div class="columns is-multiline has-text-centered centercontent">
+            <div class="column">
+                <a href="mailto: r.ranaivoson@ynov.com" target="_blank" class="title is-4 has-text-link">EMAIL
+                    <img width="18px" src="assets/svg/output.svg" target="_blank" alt="Output link icon">
+                    <h2 class="subtitle is-5" target="_blank">r.ranaivoson@ynov.com</h2>
+                </a>
+            </div>
+            <!--  -->
+            <div class="column">
+                <a href="https://www.linkedin.com/in/romain-ranaivoson/" target="_blank"
+                    class="title is-4 has-text-link">LINKEDIN
+                    <img width="18px" src="assets/svg/output.svg" target="_blank" alt="Output link icon">
+                    <h2 class="subtitle is-5" target=" _blank">Romain Ranaivoson</h2>
+                </a>
+            </div>
+            <!--  -->
+            <div class="column">
+                <a href="https://github.com/Deytron" target="_blank" class="title is-4 has-text-link">GITHUB
+                    <img width="18px" src="assets/svg/output.svg" target="_blank" alt="Output link icon">
+                    <h2 class="subtitle is-5" target="_blank">Deytron</h2>
+                </a>
+            </div>
+            <!--  -->
+            <div class="column">
+                <p target="_blank" class="title is-4 has-text-link">TELEPHONE
+                <h2 class="subtitle is-5" target="_blank">0617108848</h2>
+                </p>
+            </div>
+            <!--  -->
+        </div>
+
+        <h1 class="title is-1 has-text-centered mt-6 mb-6">MES CENTRES D'INTÉRÊT</h1>
         <div class="columns mt-6 is-multiline is-centered">
             <div class="column is-3 has-text-centered">
                 <h3 class="subtitle is-4">L'informatique</h3>
@@ -131,7 +140,8 @@
         </div>
         <div id="gotoComp" class="mb-6">⠀</div>
         <h1 class="title is-size-1-desktop is-size-3-touch has-text-centered"
-            style="margin-top: 10vh; margin-bottom: 10vh">COMPÉTENCES</h1>
+            style="margin-top: 10vh; margin-bottom: 10vh">
+            COMPÉTENCES</h1>
         <div class="columns is-centered is-vcentered">
             <div class="column is-7 centercontent">
                 <h2 class="subtitle is-size-2-desktop is-size-4-touch">PROGRAMMATION</h2>
@@ -174,7 +184,8 @@
         </div>
         <div id="gotoQualif" class="mb-6">⠀</div>
         <h1 class="title is-size-1-desktop is-size-3-touch has-text-centered"
-            style="margin-top: 10vh; margin-bottom: 10vh">QUALIFICATIONS</h1>
+            style="margin-top: 10vh; margin-bottom: 10vh">
+            QUALIFICATIONS</h1>
         <div class="columns is-centered is-vcentered">
             <div class="column is-half centercontent">
                 <img src="assets/svg/ynov.svg" alt="Ynov logo" />
@@ -200,19 +211,20 @@
         </div>
         <div id="gotoExp" class="mb-6">⠀</div>
         <h1 class="title is-size-1-desktop is-size-3-touch has-text-centered"
-            style="margin-top: 10vh; margin-bottom: 10vh">EXPÉRIENCE</h1>
+            style="margin-top: 10vh; margin-bottom: 10vh">
+            EXPÉRIENCE</h1>
         <div class="columns centercontent">
             <div class="column is-half">
                 <img src="assets/svg/ynov.svg" alt="Ynov logo" />
             </div>
             <div class="column specialcontent">
-                <h1 class="title is-3">Campus Ynov Bordeaux</h1>
+                <h2 class="title is-3">Campus Ynov Bordeaux</h2>
                 <p class="subtitle is-5">2021 - 2022</p>
-                <h2 class="subtitle is-5">
+                <p class="subtitle is-5">
                     Mentor dans la filière informatique au campus Ynov Bordeaux, en charge du suivi et de
                     l'accompagnement des
                     étudiants de première année dans le campus
-                </h2>
+                </p>
             </div>
         </div>
         <div class="columns mt-6 centercontent">
@@ -220,13 +232,13 @@
                 <img src="assets/svg/charles.svg" alt="Charles Perrens logo" width="150px" />
             </div>
             <div class="column specialcontent">
-                <h1 class="title is-3">SIH Hôpital Charles Perrens</h1>
+                <h2 class="title is-3">SIH Hôpital Charles Perrens</h2>
                 <p class="subtitle is-5">2020</p>
-                <h2 class="subtitle is-5">
+                <p class="subtitle is-5">
                     Stage au sein du Système d'Information Hospitalier, en charge de l'assistance au personnel
                     hospitalier et
                     la maintenance du matériel
-                </h2>
+                </p>
             </div>
         </div>
         <div class="columns mt-6 centercontent">
@@ -234,13 +246,14 @@
                 <img src="assets/svg/skimevo.svg" alt="Skim'Evolution logo" width="200px" />
             </div>
             <div class="column specialcontent">
-                <h1 class="title is-3">Association Skim'Evolution</h1>
+                <h2 class="title is-3">Association Skim'Evolution</h2>
                 <p class="subtitle is-5">2019</p>
-                <h2 class="subtitle is-5">
-                    Moniteur au sein de l'association Skim'Evolution, avec pour objectif d'apprendre aux volontaires les
+                <p class="subtitle is-5">
+                    Moniteur au sein de l'association Skim'Evolution, avec pour objectif d'apprendre aux volontaires
+                    les
                     bases
                     du skimboarding, et en charge de l'installation des structures d'apprentissage
-                </h2>
+                </p>
             </div>
         </div>
         <div class="columns mt-6 centercontent">
@@ -248,15 +261,17 @@
                 <img src="assets/svg/sncf.svg" alt="SNCF logo" width="200px" />
             </div>
             <div class="column specialcontent">
-                <h1 class="title is-3">SNCF - Gare de Bordeaux Saint-Jean</h1>
+                <h2 class="title is-3">SNCF - Gare de Bordeaux Saint-Jean</h2>
                 <p class="subtitle is-5">2015</p>
-                <h2 class="subtitle is-5">Stage d'observation dans l'UP Informatique de la gare de Bordeaux Saint-Jean
-                </h2>
+                <p class="subtitle is-5">Stage d'observation dans l'UP Informatique de la gare de Bordeaux
+                    Saint-Jean
+                </p>
             </div>
             <div id="gotoProj" class="mb-6">⠀</div>
         </div>
         <h1 class="title is-size-1-desktop is-size-3-touch has-text-centered"
-            style="margin-top: 10vh; margin-bottom: 10vh">PROJETS</h1>
+            style="margin-top: 10vh; margin-bottom: 10vh">
+            PROJETS</h1>
         <!-- CARDS FOR PROJECTS -->
         <div class="columns is-multiline is-flex is-centered">
             <!--  -->
