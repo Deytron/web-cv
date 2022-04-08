@@ -34,8 +34,15 @@ a:active {
 }
 /*  */
 
-/* PADDING FOR MOBILE */
 
+/* Tablet breakpoint */
+@media only screen and (max-width: 1022px) {
+  .marginProjCard {
+    margin: 1em;
+  }
+}
+
+/* PADDING FOR MOBILE */
 @media only screen and (max-width: 769px) {
   .centercontent {
     text-align: center;
@@ -43,6 +50,15 @@ a:active {
 
   .specialcontent {
     text-align: center;
+  }
+
+  .leftLogoDesktop {
+    display: flex;
+    justify-content: center;
+  }
+
+  .marginProjCard {
+    margin: 0;
   }
 }
 
@@ -53,11 +69,16 @@ a:active {
   }
 
   .specialcontent {
-    text-align: right;
+    text-align: left;
   }
 
-  .mrC {
-    margin-right: 5vw;
+  .marginProjCard {
+    margin: 1.5em;
+  }
+
+  .leftLogoDesktop {
+    display: flex;
+    justify-content: flex-end;
   }
 }
 /*  */
@@ -167,6 +188,12 @@ a:active {
 
 .bioLeftText {
   font-size: xx-large;
+}
+
+.rightlogo {
+ object-fit: contain;
+  height: auto;
+  max-width: 200px;
 }
 
 .hobbyIcon {
